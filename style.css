@@ -141,7 +141,7 @@ color: white;
     "game4 game5 game6";    
 }
 
-.about-games-box1 {
+.about-games-box-1 {
   grid-area:game1;
   height: 473px;
   width: 378px;
@@ -149,7 +149,7 @@ color: white;
   border-radius: 30px;
 }
 
-.about-games-box2 {
+.about-games-box-2 {
   grid-area: game2;
  height: 512px;
  width: 378px;
@@ -157,7 +157,7 @@ color: white;
  border-radius: 30px;
 }
 
-.about-games-box3 {
+.about-games-box-3 {
   grid-area: game3;
   height: 473px;
   width: 378px;
@@ -165,7 +165,7 @@ color: white;
   border-radius: 30px;
 }
 
-.about-games-box4 {
+.about-games-box-4 {
   grid-area: game4;
   height: 551px;
   width: 378px;
@@ -173,22 +173,57 @@ color: white;
   border-radius: 30px;
 }
 
-.about-games-box5{
+.about-games-box-5{
 grid-area: game5;
  height: 512px; 
  width: 378px;
  background-color: white;
  border-radius: 30px;
 }
-.about-games-box6{
+.about-games-box-6{
     grid-area:game6;
     height: 551px;
     width: 378px;
     background-color: white;
     border-radius: 30px;
 }
-.pic{
+.about-games-box__item{
     width: 378px;
-    height: 314 px;
+    height: 314px;
 }
+.about-games-box-GameName{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+.about-games-box-game{
+    margin-top: 32px;
+    border: 1px solid ;
+    width: 108px;
+    height: 36px;
+    border-radius: 52.58px;
+    background-color: rgba(247, 247, 247, 1);
+    font-family: "Montserrat";
+font-weight: 500;
+font-style: Medium;
+font-size: 16px;
+line-height: 110.00000000000001%;
+letter-spacing: 0px;
+vertical-align: bottom;
+ display: flex;
+    justify-content: center; 
+    align-items:center; 
+}
+.about-games-box-name{
+    width: 314px;
+height: 78px;
+font-family: "Montserrat";
+font-weight: 700;
+font-style: Bold;
+font-size: 32px;
+line-height: 100%;
+letter-spacing: 0px;
+vertical-align: middle;
 
+
+}
