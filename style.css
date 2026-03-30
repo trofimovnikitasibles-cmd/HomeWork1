@@ -59,7 +59,6 @@ box-sizing: border-box;
 .main-btn:hover{
     background-color: white;
     color: black;
-    margin-bottom: 156px;
     border: 1px solid black
 }
 .main-animated{
@@ -132,7 +131,9 @@ color: white;
 }
 
 .about-games-box-all{
-    padding: 121px;
+    padding-left: 121px;
+    padding-right: 121px;
+    margin-top: 72px;
     display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -163,6 +164,7 @@ color: white;
   width: 378px;
   background-color: white;
   border-radius: 30px;
+  z-index: 1;
 }
 
 .about-games-box-4 {
@@ -195,6 +197,7 @@ grid-area: game5;
     display: flex;
     flex-direction: column;
     gap:16px;
+    margin-left: 32px;
 }
 .about-games-box-game{
     margin-top: 32px;
@@ -224,6 +227,166 @@ font-size: 32px;
 line-height: 100%;
 letter-spacing: 0px;
 vertical-align: middle;
+}
+
+.about-games {
+    position: relative; /* Чтобы дочерний блок позиционировался относительно секции */
+    overflow: hidden;   /* Скрываем ту часть картинки, которая вылезает за экран */
+}
+.about-games-svg-Big {
+    position: absolute;
+    top: 392px;           /* Центрируем по вертикали */
+    right: -127px;      /* Сдвигаем вправо за край экрана (подберите нужное число) */
+    transform: translateY(-50%); /* Точная центровка по вертикали */
+    width: 584.72px;       /* Размер вашей SVG */
+    height: 584.72px;
+    background-repeat: no-repeat;
+    z-index: 0;         /* Картинка будет под текстом, если у текста z-index выше */
+    pointer-events: none; /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+}
+.about-games-svg-Small-1 {
+    position: absolute;
+    top: 770px;           /* Центрируем по вертикали */
+    left:25px;      /* Сдвигаем вправо за край экрана (подберите нужное число) */
+    transform: translateY(-50%); /* Точная центровка по вертикали */
+    width: 31.34px;       /* Размер вашей SVG */
+    height: 31.34px;
+    background-repeat: no-repeat;
+    z-index: 0;         /* Картинка будет под текстом, если у текста z-index выше */
+    pointer-events: none; /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+}
+.about-games-svg-Small-2 {
+    position: absolute;
+    top: 822px;           /* Центрируем по вертикали */
+    left:40px;      /* Сдвигаем вправо за край экрана (подберите нужное число) */
+    transform: translateY(-50%); /* Точная центровка по вертикали */
+    width: 54.6px;       /* Размер вашей SVG */
+    height: 54.6px;
+    background-repeat: no-repeat;
+    z-index: 0;         /* Картинка будет под текстом, если у текста z-index выше */
+    pointer-events: none; /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+}
 
 
+.main-header {
+    position: relative; /* Чтобы дочерний блок позиционировался относительно секции */
+    overflow: hidden;   /* Скрываем ту часть картинки, которая вылезает за экран */
+    z-index: 1;
+}
+
+
+.main-star-big{
+    position: absolute;
+    top: 392px;           /* Центрируем по вертикали */
+    right: -339px;      /* Сдвигаем вправо за край экрана (подберите нужное число) */
+    transform: translateY(-50%) rotate(-1deg); /* Точная центровка по вертикали */
+    width: 749.55px;       /* Размер вашей SVG */
+    height: 791.06px;
+    background-repeat: no-repeat;
+    z-index: 2;         /* Картинка будет под текстом, если у текста z-index выше */
+    pointer-events: none; /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+}
+.main-star-small-1{
+    position: absolute;
+    top: 69px;           /* Центрируем по вертикали */
+    left:156px;     /* Сдвигаем вправо за край экрана (подберите нужное число) */
+    transform: translateY(-50%) rotate(-1deg); /* Точная центровка по вертикали */
+    width:35px;       /* Размер вашей SVG */
+    height: 35px;
+    background-repeat: no-repeat;
+    z-index: 2;         /* Картинка будет под текстом, если у текста z-index выше */
+    pointer-events: none; /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+}
+.main-star-small-2{
+    position: absolute;
+    top: 94px;           /* Центрируем по вертикали */
+    left:63px;     /* Сдвигаем вправо за край экрана (подберите нужное число) */
+    transform: translateY(-50%) rotate(-1deg); /* Точная центровка по вертикали */
+    width:57px;       /* Размер вашей SVG */
+    height: 57px;
+    background-repeat: no-repeat;
+    z-index: 2;         /* Картинка будет под текстом, если у текста z-index выше */
+    pointer-events: none; /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+}
+.main-star-small-3{
+    position: absolute;
+    top: 538px;           /* Центрируем по вертикали */
+    left:948px;     /* Сдвигаем вправо за край экрана (подберите нужное число) */
+    transform: translateY(-50%) rotate(-1deg); /* Точная центровка по вертикали */
+    width:37px;       /* Размер вашей SVG */
+    height: 37px;
+    background-repeat: no-repeat;
+    z-index: 2;         /* Картинка будет под текстом, если у текста z-index выше */
+    pointer-events: none; /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+}
+.main-star-small-4{
+    position: absolute;
+    top: 568px;           /* Центрируем по вертикали */
+    left:1013px;     /* Сдвигаем вправо за край экрана (подберите нужное число) */
+    transform: translateY(-50%) rotate(-1deg); /* Точная центровка по вертикали */
+    width:83px;       /* Размер вашей SVG */
+    height: 83px;
+    background-repeat: no-repeat;
+    z-index: 2;         /* Картинка будет под текстом, если у текста z-index выше */
+    pointer-events: none; /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+}
+.main-angleUp{
+    position: absolute;
+    top: 82px;           /* Центрируем по вертикали */
+    left:854px;     /* Сдвигаем вправо за край экрана (подберите нужное число) */
+    transform: translateY(-50%) rotate(-1deg); /* Точная центровка по вертикали */
+    width:317px;       /* Размер вашей SVG */
+    height: 163px;
+    background-repeat: no-repeat;
+    z-index: 2;         /* Картинка будет под текстом, если у текста z-index выше */
+    pointer-events: none; /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+}
+.main-angleMidle{
+    position: absolute;
+    top: 332px;           /* Центрируем по вертикали */
+    left:1067px;     /* Сдвигаем вправо за край экрана (подберите нужное число) */
+    transform: translateY(-50%) rotate(-1deg); /* Точная центровка по вертикали */
+    width:142px;       /* Размер вашей SVG */
+    height: 179px;
+    background-repeat: no-repeat;
+    z-index: 2;         /* Картинка будет под текстом, если у текста z-index выше */
+    pointer-events: none; /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+}
+.main-angleDown{
+    position: absolute;
+    top: 574px;           /* Центрируем по вертикали */
+    left:1225px;     /* Сдвигаем вправо за край экрана (подберите нужное число) */
+    transform: translateY(-50%) rotate(-1deg); /* Точная центровка по вертикали */
+    width:219.88px;       /* Размер вашей SVG */
+    height: 418px;
+    background-repeat: no-repeat;
+    z-index: 0;         /* Картинка будет под текстом, если у текста z-index выше */
+    pointer-events: none; /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+}
+.main-line{
+    position: absolute;
+    top: 711px;           /* Центрируем по вертикали */
+    left:1345px;     /* Сдвигаем вправо за край экрана (подберите нужное число) */
+    transform: translateY(-50%) rotate(-1deg); /* Точная центровка по вертикали */
+    width:34px;       /* Размер вашей SVG */
+    height: 124px;
+    background-repeat: no-repeat;
+    z-index: 0;         /* Картинка будет под текстом, если у текста z-index выше */
+    pointer-events: none; /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+}
+.main-animated{
+     position: relative; /* Чтобы дочерний блок позиционировался относительно секции */
+    overflow: hidden;   /* Скрываем ту часть картинки, которая вылезает за экран */
+    z-index: 1;
+}
+.main-triangle{
+    position: absolute;
+    top: 512px;           /* Центрируем по вертикали */
+    left:1247px;     /* Сдвигаем вправо за край экрана (подберите нужное число) */
+    transform: translateY(-50%) rotate(-1deg); /* Точная центровка по вертикали */
+    width:80px;       /* Размер вашей SVG */
+    height: 126px;
+    background-repeat: no-repeat;
+    z-index: 2;         /* Картинка будет под текстом, если у текста z-index выше */
+    pointer-events: none; /* Чтобы картинка не мешала кликать на кнопки/ссылки */
 }
