@@ -6,16 +6,21 @@
 
 .main-hero-page{
     background-color: rgba(225, 255, 143, 1);
-    height: 800px;
+    height: 710px;
     width: 1440px;
+    
    
+}
+.center {
+  padding-left: calc(50% - 720px);
+  margin-right: calc(50% - 720px);
 }
 .main-title{
 width: 769;
 height: 358;
 padding-top: 196px;
 margin-left: 120px;
-margin-bottom: 156px;
+margin-bottom: 180px;
 }
 .main-h1{
 width: 769px;
@@ -90,11 +95,11 @@ line-height: 110.00000000000001%;
 letter-spacing: 4%;
 vertical-align: middle;
 text-transform: uppercase;
-margin-top: 27px;
+margin-top: 28px;
 }
 .about-games{
 width: 1440px;
-height: 1500px;
+height: 1470px;
 background-color: rgba(32, 32, 39, 1);
 padding-top: 94px;
 }
@@ -139,7 +144,8 @@ color: white;
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
     "game1 game2 game3 "
-    "game4 game5 game6";    
+    "game4 game5 game6";  
+    gap:32px;
 }
 
 .about-games-box-1 {
@@ -246,18 +252,18 @@ vertical-align: middle;
 }
 .about-games-svg-Small-1 {
     position: absolute;
-    top: 770px;           /* Центрируем по вертикали */
+    top: 834px;           /* Центрируем по вертикали */
     left:25px;      /* Сдвигаем вправо за край экрана (подберите нужное число) */
     transform: translateY(-50%); /* Точная центровка по вертикали */
     width: 31.34px;       /* Размер вашей SVG */
     height: 31.34px;
     background-repeat: no-repeat;
-    z-index: 0;         /* Картинка будет под текстом, если у текста z-index выше */
+    z-index: 2;         /* Картинка будет под текстом, если у текста z-index выше */
     pointer-events: none; /* Чтобы картинка не мешала кликать на кнопки/ссылки */
 }
 .about-games-svg-Small-2 {
     position: absolute;
-    top: 822px;           /* Центрируем по вертикали */
+    top: 890px;           /* Центрируем по вертикали */
     left:40px;      /* Сдвигаем вправо за край экрана (подберите нужное число) */
     transform: translateY(-50%); /* Точная центровка по вертикали */
     width: 54.6px;       /* Размер вашей SVG */
@@ -278,7 +284,7 @@ vertical-align: middle;
 .main-star-big{
     position: absolute;
     top: 392px;           /* Центрируем по вертикали */
-    right: -339px;      /* Сдвигаем вправо за край экрана (подберите нужное число) */
+    right: -343px;      /* Сдвигаем вправо за край экрана (подберите нужное число) */
     transform: translateY(-50%) rotate(-1deg); /* Точная центровка по вертикали */
     width: 749.55px;       /* Размер вашей SVG */
     height: 791.06px;
@@ -389,4 +395,47 @@ vertical-align: middle;
     background-repeat: no-repeat;
     z-index: 2;         /* Картинка будет под текстом, если у текста z-index выше */
     pointer-events: none; /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+}
+.about-games-box-link-1{
+    text-decoration: none;
+    color:inherit;
+    width: 378px;
+height: 473px;
+border-radius: 30px;
+}
+.about-games-box-link-2{
+      text-decoration: none;
+    color:inherit;
+    width: 378px;
+height: 512px;
+border-radius: 30px;
+}
+.about-games-box-link-3{
+      text-decoration: none;
+    color:inherit;
+z-index: 1;
+width: 378px;
+height: 473px;
+border-radius: 30px;
+}
+.about-games-box-link-4{
+      text-decoration: none;
+    color:inherit;
+width: 378px;
+height: 314px;
+border-radius: 30px;
+}
+.about-games-box-link-5{
+    text-decoration: none;
+    color:inherit;
+    width: 378px;
+height: 473px;
+border-radius: 30px;
+}
+.about-games-box-link-6{
+      text-decoration: none;
+    color:inherit;
+width: 378px;
+height: 314px;
+border-radius: 30px;
 }
