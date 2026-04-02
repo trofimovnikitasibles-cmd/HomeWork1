@@ -7,13 +7,13 @@
 .main-hero-page{
     background-color: rgba(225, 255, 143, 1);
     height: 710px;
-    width: 1440px;
+    width: 100%;
     
    
 }
 .center {
-  padding-left: calc(50% - 720px);
-  margin-right: calc(50% - 720px);
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .main-title{
 width: 769;
@@ -67,7 +67,7 @@ box-sizing: border-box;
     border: 1px solid black
 }
 .main-animated{
-    width: 1440px;
+    width: 100%;
     height: 90px;
     background-color: rgba(188, 236, 48, 1);
 }
@@ -98,7 +98,7 @@ text-transform: uppercase;
 margin-top: 28px;
 }
 .about-games{
-width: 1440px;
+width: 100%;
 height: 1470px;
 background-color: rgba(32, 32, 39, 1);
 padding-top: 94px;
