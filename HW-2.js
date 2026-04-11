@@ -16,3 +16,6 @@ alert(`Создатель JS - ${name}`);
 x = 10;
 y = 2;
 alert(x+y);
+alert (x-y);
+alert (x*y);
+alert (x/y);
