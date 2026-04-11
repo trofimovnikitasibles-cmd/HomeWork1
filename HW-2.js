@@ -19,3 +19,6 @@ alert(x+y);
 alert (x-y);
 alert (x*y);
 alert (x/y);
+
+//#5
+alert(2**5);
