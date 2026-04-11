@@ -42,3 +42,7 @@ num++;
 alert(num);
 num--;
 alert(num);
+
+//#8
+let ages = prompt("Сколько вам лет?")
+alert(ages);
