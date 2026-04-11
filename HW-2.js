@@ -7,3 +7,7 @@ alert (a);
 //#2 
 const age = 2007;
 alert (`Дата выхода первого iPhone - ${age}`);
+
+//#3
+const name = 'Брендан Эйх';
+alert(`Создатель JS - ${name}`);
