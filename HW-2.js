@@ -5,8 +5,9 @@ a = 20;
 alert (a);
 
 //#2 
+{
 const age = 2007;
-alert (`Дата выхода первого iPhone - ${age}`);
+alert (`Дата выхода первого iPhone - ${age}`);}
 
 //#3
 const name = 'Брендан Эйх';
@@ -44,5 +45,12 @@ num--;
 alert(num);
 
 //#8
-let ages = prompt("Сколько вам лет?")
-alert(ages);
+{let age = prompt("Сколько вам лет?")
+alert(age);}
+
+//#9
+const User = {
+    name: 'Никита',
+    age: 29,
+    isAdmin: 123456789111213n
+}
