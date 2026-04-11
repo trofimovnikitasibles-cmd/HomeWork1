@@ -27,3 +27,18 @@ alert(2**5);
 а=9;
 b=2;
 alert(a%b);
+
+//#7
+let num = 1;
+num +=5;
+alert(num);
+num -=3;
+alert(num);
+num *=7;
+alert(num);
+num /=3;
+alert(num);
+num++;
+alert(num);
+num--;
+alert(num);
