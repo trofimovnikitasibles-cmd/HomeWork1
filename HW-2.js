@@ -54,3 +54,8 @@ const User = {
     age: 29,
     isAdmin: 123456789111213n
 }
+
+//#10
+{const name = prompt("Ваше имя");
+    alert(name);
+}
