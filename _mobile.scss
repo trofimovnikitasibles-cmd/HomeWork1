@@ -1,0 +1,169 @@
+@media(max-width:738px){
+    .center{
+        padding-left:16px;
+        padding-right:16px ;
+    }
+.main-angleUp{
+    display:none;
+}
+.main-angleMidle{
+    display: none;
+}
+.main-angleDown{
+    display:none;
+}
+.main-line{
+    display: none;
+}
+.main-triangle{
+    display: none;
+    
+}
+.main-star-small-1{
+    display: none;
+}
+.main-star-small-2{
+    display: none;
+}
+.main-star-small-3{
+    display: none;
+}
+.main-star-small-4{
+    display: none;
+}
+.main-star-big{
+    display: none;
+    
+}
+.main-mob-star-small-1{
+    display: flex;
+    position: absolute;
+    top:64px;
+    left: 92px;
+}
+.main-mob-star-small-2{
+    display: flex;
+    position: absolute;
+    left:38px;
+    top:97px
+}
+.main-mob-star-small-3{
+    display: flex;
+    position: absolute;
+    left:273px;
+    top:557px;
+}
+.main-mob-star-small-4{
+    display: flex;
+    position: absolute;
+    left:304px;
+    top:580px;
+}
+.main-mobile-star-big{
+    display: flex;
+    position: absolute;
+    left: 215px;
+}
+.main-h1{
+width: 262px;
+height: 196px;
+font-family: "Montserrat";
+font-weight: 700;
+font-style: Bold;
+font-size: 40px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0px;
+text-align: center;
+vertical-align: middle;
+margin-left: 40.5px;
+}
+.main-h2{
+    width: 296px;
+height: 60px;
+font-family: "Montserrat";
+font-weight: 400;
+font-style: "Regular";
+font-size: 16px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0px;
+text-align: center;
+vertical-align: middle;
+margin: 0px;
+margin-left:23.5px;
+margin-bottom: 36px;
+}
+
+.main-btn{
+    width: 285px;
+    height: 55px;
+    margin-left: 29px;
+}
+
+
+.ftr-title{
+    margin-left: 0px;
+}
+.bold{
+    font-weight:bold;
+}
+/* Создаю новый блок "мини - игры"
+.about-games-svg-Big{
+display: none;
+}
+.about-games-svg-Small-1{
+display: none;
+}
+.about-games-svg-Small-2{
+display: none;
+}
+.about-games-title-h2{
+    display:none;
+}
+.about-games-title-h3{
+    display: none;
+}
+.mini-games{
+        width: 314px;
+    height: 78px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: white;
+    margin-bottom: 24px;
+    display:flex;
+}
+.about-games{
+   padding-left: 16px;
+   padding-right: 16px;
+   padding-bottom: 144px;
+   padding-top: 0px;
+   padding-top: 48.34px;
+   height: 3740px;
+}
+.about-games-box-all{
+    display: flex;
+    flex-direction: column;
+}
+.about-games-box{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.about-games-box-link-1{
+     width: 343px;
+height: 529px;
+}
+.about-games-box-1{
+    width: 343px;
+height: 529px;
+} */
+
+.about-games{
+    display:none;
+}
+}
