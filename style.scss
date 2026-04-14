@@ -743,6 +743,10 @@ line-height: 142%;
 letter-spacing: 0%;
 text-align: center;
 }
+.mini-games-btn:hover{
+background-color: white;
+color: black;
+}
 .star-mini-1{
         position: absolute;
     width: 35px;
@@ -770,8 +774,6 @@ right: 52px;
 height: 41px;
 right: 150px;
 margin-top:3414px;
-
-
 }
 
 @import'mobile'
