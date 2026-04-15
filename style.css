@@ -1,582 +1,1079 @@
+@charset "UTF-8";
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
-body{
-    overflow-x: hidden;
+
+body {
+  overflow-x: hidden;
 }
 
 .main-hero-page {
-    background-color: rgba(225, 255, 143, 1);
-    height: 710px;
-    position: relative;
+  background-color: rgb(225, 255, 143);
+  height: 710px;
+  position: relative;
 }
 
 .main-header {
-    overflow: hidden;
-    /* Скрываем ту часть картинки, которая вылезает за экран */
-    z-index: 1;
+  overflow: hidden;
+  /* Скрываем ту часть картинки, которая вылезает за экран */
+  z-index: 1;
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
-    z-index: 1;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+  z-index: 1;
 }
 
 .main-title {
-    padding-top: 196px;
-    margin-bottom: 180px;
+  padding-top: 196px;
+  margin-bottom: 180px;
 }
 
 .main-h1 {
-    width: 769px;
-    height: 156px;
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 64px;
-    line-height: 100%;
-    letter-spacing: 0px;
-    vertical-align: middle;
-
+  width: 769px;
+  height: 156px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
 }
 
 .main-h2 {
-    width: 720px;
-    height: 64px;
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-style: "Regular";
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 0px;
-    vertical-align: middle;
-    margin-bottom: 48px;
+  width: 720px;
+  height: 64px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  margin-bottom: 48px;
 }
 
 .main-btn {
-    width: 246px;
-    height: 66px;
-    border-radius: 60px;
-    font-family: "Montserrat";
-    font-weight: 600;
-    font-style: "SemiBold";
-    font-size: 24px;
-    line-height: 142%;
-    letter-spacing: 0%;
-    text-align: center;
-    background-color: black;
-    color: white;
-    box-sizing: border-box;
+  width: 246px;
+  height: 66px;
+  border-radius: 60px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: "SemiBold";
+  font-size: 24px;
+  line-height: 142%;
+  letter-spacing: 0%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
 }
 
 .main-btn:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 
 .main-animated {
-    height: 90px;
-    background-color: rgba(188, 236, 48, 1);
-    position: relative;
-    /* Чтобы дочерний блок позиционировался относительно секции */
-    overflow: hidden;
-    /* Скрываем ту часть картинки, которая вылезает за экран */
-    z-index: 1;
+  height: 90px;
+  background-color: rgb(188, 236, 48);
+  position: relative;
+  /* Чтобы дочерний блок позиционировался относительно секции */
+  overflow: hidden;
+  /* Скрываем ту часть картинки, которая вылезает за экран */
+  z-index: 1;
 }
 
 .main-runtext {
-
-    white-space: nowrap;
-    /* Не даем тексту переноситься */
+  white-space: nowrap;
+  /* Не даем тексту переноситься */
 }
 
 .main-runtext span {
-    display: inline-block;
-    padding-left: 100%;
-    animation: scroll-text 10s linear infinite;
-    /* 10s — скорость */
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-text 10s linear infinite;
+  /* 10s — скорость */
 }
 
 @keyframes scroll-text {
-    0% {
-        transform: translate(0, 0);
-    }
-
-    100% {
-        transform: translate(-100%, 0);
-    }
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }
-
 .main-runtext-style {
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 30px;
-    line-height: 110.00000000000001%;
-    letter-spacing: 4%;
-    vertical-align: middle;
-    text-transform: uppercase;
-    margin-top: 28px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: 4%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin-top: 28px;
 }
 
 .about-games {
-    height: 1326px;
-    background-color: rgba(32, 32, 39, 1);
-    padding-top: 94px;
+  height: 1440px;
+  background-color: rgb(32, 32, 39);
+  padding-top: 94px;
 }
 
-.about-games-title {}
-
 .about-games-title-h2 {
-    width: 314px;
-    height: 78px;
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 64px;
-    line-height: 100%;
-    letter-spacing: 0px;
-    vertical-align: middle;
-    color: white;
-    margin-bottom: 24px;
+  width: 314px;
+  height: 78px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  color: white;
+  margin-bottom: 24px;
 }
 
 .about-games-title-h3 {
-    width: 788px;
-    height: 96px;
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-style: "Regular";
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 0px;
-    vertical-align: middle;
-    color: white;
+  width: 788px;
+  height: 96px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  color: white;
 }
 
 .about-games-box {
-    width: 1201px;
+  width: 1201px;
 }
 
 .about-games-box-all {
-    margin-top: 72px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    gap: 32px;
+  margin-top: 72px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 32px;
 }
 
 .about-games-box-1 {
-    height: 473px;
-    width: 378px;
-    background-color: white;
-    border-radius: 30px;
+  height: 473px;
+  width: 378px;
+  background-color: white;
+  border-radius: 30px;
 }
 
 .about-games-box-2 {
-    height: 512px;
-    width: 378px;
-    background-color: white;
-    border-radius: 30px;
+  height: 512px;
+  width: 378px;
+  background-color: white;
+  border-radius: 30px;
 }
 
 .about-games-box-3 {
-    height: 473px;
-    width: 378px;
-    background-color: white;
-    border-radius: 30px;
-    z-index: 1;
+  height: 473px;
+  width: 378px;
+  background-color: white;
+  border-radius: 30px;
+  z-index: 1;
 }
 
 .about-games-box-4 {
-    height: 551px;
-    width: 378px;
-    background-color: white;
-    border-radius: 30px;
+  height: 551px;
+  width: 378px;
+  background-color: white;
+  border-radius: 30px;
 }
 
 .about-games-box-5 {
-    height: 512px;
-    width: 378px;
-    background-color: white;
-    border-radius: 30px;
+  height: 512px;
+  width: 378px;
+  background-color: white;
+  border-radius: 30px;
 }
 
 .about-games-box-6 {
-    height: 551px;
-    width: 378px;
-    background-color: white;
-    border-radius: 30px;
+  height: 551px;
+  width: 378px;
+  background-color: white;
+  border-radius: 30px;
 }
 
 .about-games-box-link-1 {
-    grid-column: 1;
-    grid-row-start: 1;
-    grid-row-end: 2;
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .about-games-box-link-2 {
-    grid-column: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .about-games-box-link-3 {
-    grid-column: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+  grid-column: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .about-games-box-link-4 {
-    grid-column: 1;
-    grid-row-start: 2;
-    grid-row-end: 4;
+  grid-column: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 .about-games-box-link-5 {
-    grid-column: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
+  grid-column: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .about-games-box-link-6 {
-    grid-column: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
+  grid-column: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 .about-games-box__item {
-    width: 378px;
-    height: 314px;
+  width: 378px;
+  height: 314px;
 }
 
 .about-games-box-GameName {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 32px;
 }
 
 .about-games-box-game {
-    margin-top: 32px;
-    width: 108px;
-    height: 36px;
-    border-radius: 52.58px;
-    background-color: rgba(247, 247, 247, 1);
-    font-family: "Montserrat";
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 16px;
-    line-height: 110.00000000000001%;
-    letter-spacing: 0px;
-    vertical-align: bottom;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-top: 32px;
+  width: 108px;
+  height: 36px;
+  border-radius: 52.58px;
+  background-color: rgb(247, 247, 247);
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 0px;
+  vertical-align: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-games-box-name {
-    width: 314px;
-    height: 78px;
-    font-family: "Montserrat";
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 32px;
-    line-height: 100%;
-    letter-spacing: 0px;
-    vertical-align: middle;
+  width: 314px;
+  height: 78px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
 }
 
 .about-games {
-    position: relative;
-    /* Чтобы дочерний блок позиционировался относительно секции */
-    overflow: hidden;
-    /* Скрываем ту часть картинки, которая вылезает за экран */
+  position: relative;
+  /* Чтобы дочерний блок позиционировался относительно секции */
+  overflow: hidden;
+  /* Скрываем ту часть картинки, которая вылезает за экран */
 }
 
 .about-games-svg-Big {
-    position: absolute;
-    top: 392px;
-    /* Центрируем по вертикали */
-    right: -127px;
-    /* Сдвигаем вправо за край экрана (подберите нужное число) */
-    transform: translateY(-50%);
-    /* Точная центровка по вертикали */
-    width: 584.72px;
-    /* Размер вашей SVG */
-    height: 584.72px;
-    background-repeat: no-repeat;
-    z-index: 0;
-    /* Картинка будет под текстом, если у текста z-index выше */
-    pointer-events: none;
-    /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+  position: absolute;
+  top: 392px;
+  /* Центрируем по вертикали */
+  right: -127px;
+  /* Сдвигаем вправо за край экрана (подберите нужное число) */
+  transform: translateY(-50%);
+  /* Точная центровка по вертикали */
+  width: 584.72px;
+  /* Размер вашей SVG */
+  height: 584.72px;
+  background-repeat: no-repeat;
+  z-index: 0;
+  /* Картинка будет под текстом, если у текста z-index выше */
+  pointer-events: none;
+  /* Чтобы картинка не мешала кликать на кнопки/ссылки */
 }
 
 .about-games-svg-Small-1 {
-    position: absolute;
-    top: 834px;
-    /* Центрируем по вертикали */
-    left: 25px;
-    /* Сдвигаем вправо за край экрана (подберите нужное число) */
-    transform: translateY(-50%);
-    /* Точная центровка по вертикали */
-    width: 31.34px;
-    /* Размер вашей SVG */
-    height: 31.34px;
-    background-repeat: no-repeat;
-    z-index: 2;
-    /* Картинка будет под текстом, если у текста z-index выше */
-    pointer-events: none;
-    /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+  position: absolute;
+  top: 834px;
+  /* Центрируем по вертикали */
+  left: 25px;
+  /* Сдвигаем вправо за край экрана (подберите нужное число) */
+  transform: translateY(-50%);
+  /* Точная центровка по вертикали */
+  width: 31.34px;
+  /* Размер вашей SVG */
+  height: 31.34px;
+  background-repeat: no-repeat;
+  z-index: 2;
+  /* Картинка будет под текстом, если у текста z-index выше */
+  pointer-events: none;
+  /* Чтобы картинка не мешала кликать на кнопки/ссылки */
 }
 
 .about-games-svg-Small-2 {
-    position: absolute;
-    top: 890px;
-    /* Центрируем по вертикали */
-    left: 40px;
-    /* Сдвигаем вправо за край экрана (подберите нужное число) */
-    transform: translateY(-50%);
-    /* Точная центровка по вертикали */
-    width: 54.6px;
-    /* Размер вашей SVG */
-    height: 54.6px;
-    background-repeat: no-repeat;
-    z-index: 0;
-    /* Картинка будет под текстом, если у текста z-index выше */
-    pointer-events: none;
-    /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+  position: absolute;
+  top: 890px;
+  /* Центрируем по вертикали */
+  left: 40px;
+  /* Сдвигаем вправо за край экрана (подберите нужное число) */
+  transform: translateY(-50%);
+  /* Точная центровка по вертикали */
+  width: 54.6px;
+  /* Размер вашей SVG */
+  height: 54.6px;
+  background-repeat: no-repeat;
+  z-index: 0;
+  /* Картинка будет под текстом, если у текста z-index выше */
+  pointer-events: none;
+  /* Чтобы картинка не мешала кликать на кнопки/ссылки */
 }
 
-
-
 .main-star-big {
-    position: absolute;
-    top: 389px;
-    /* Центрируем по вертикали */
-    right: 0;
-    /* Сдвигаем вправо за край экрана (подберите нужное число) */
-    transform: translateY(-50%) rotate(0deg);
-    /* Точная центровка по вертикали */
-    height: 791.06px;
-    background-repeat: no-repeat;
-    z-index: 2;
-    /* Картинка будет под текстом, если у текста z-index выше */
-    pointer-events: none;
-    /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+  position: absolute;
+  top: 389px;
+  /* Центрируем по вертикали */
+  right: 0;
+  /* Сдвигаем вправо за край экрана (подберите нужное число) */
+  transform: translateY(-50%) rotate(0deg);
+  /* Точная центровка по вертикали */
+  height: 791.06px;
+  background-repeat: no-repeat;
+  z-index: 2;
+  /* Картинка будет под текстом, если у текста z-index выше */
+  pointer-events: none;
+  /* Чтобы картинка не мешала кликать на кнопки/ссылки */
 }
 
 .main-star-small-1 {
-    position: absolute;
-    top: 69px;
-    /* Центрируем по вертикали */
-    left: 156px;
-    /* Сдвигаем вправо за край экрана (подберите нужное число) */
-    transform: translateY(-50%) rotate(-1deg);
-    /* Точная центровка по вертикали */
-    width: 35px;
-    /* Размер вашей SVG */
-    height: 35px;
-    background-repeat: no-repeat;
-    z-index: 2;
-    /* Картинка будет под текстом, если у текста z-index выше */
-    pointer-events: none;
-    /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+  position: absolute;
+  top: 69px;
+  /* Центрируем по вертикали */
+  left: 156px;
+  /* Сдвигаем вправо за край экрана (подберите нужное число) */
+  transform: translateY(-50%) rotate(-1deg);
+  /* Точная центровка по вертикали */
+  width: 35px;
+  /* Размер вашей SVG */
+  height: 35px;
+  background-repeat: no-repeat;
+  z-index: 2;
+  /* Картинка будет под текстом, если у текста z-index выше */
+  pointer-events: none;
+  /* Чтобы картинка не мешала кликать на кнопки/ссылки */
 }
 
 .main-star-small-2 {
-    position: absolute;
-    top: 94px;
-    /* Центрируем по вертикали */
-    left: 63px;
-    /* Сдвигаем вправо за край экрана (подберите нужное число) */
-    transform: translateY(-50%) rotate(-1deg);
-    /* Точная центровка по вертикали */
-    width: 57px;
-    /* Размер вашей SVG */
-    height: 57px;
-    background-repeat: no-repeat;
-    z-index: 2;
-    /* Картинка будет под текстом, если у текста z-index выше */
-    pointer-events: none;
-    /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+  position: absolute;
+  top: 94px;
+  /* Центрируем по вертикали */
+  left: 63px;
+  /* Сдвигаем вправо за край экрана (подберите нужное число) */
+  transform: translateY(-50%) rotate(-1deg);
+  /* Точная центровка по вертикали */
+  width: 57px;
+  /* Размер вашей SVG */
+  height: 57px;
+  background-repeat: no-repeat;
+  z-index: 2;
+  /* Картинка будет под текстом, если у текста z-index выше */
+  pointer-events: none;
+  /* Чтобы картинка не мешала кликать на кнопки/ссылки */
 }
 
 .main-star-small-3 {
-    position: absolute;
-    top: 538px;
-    /* Центрируем по вертикали */
-    right: 455px;
-    /* Сдвигаем вправо за край экрана (подберите нужное число) */
-    transform: translateY(-50%) rotate(-1deg);
-    /* Точная центровка по вертикали */
-    width: 37px;
-    /* Размер вашей SVG */
-    height: 37px;
-    background-repeat: no-repeat;
-    z-index: 2;
-    /* Картинка будет под текстом, если у текста z-index выше */
-    pointer-events: none;
-    /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+  position: absolute;
+  top: 538px;
+  /* Центрируем по вертикали */
+  right: 455px;
+  /* Сдвигаем вправо за край экрана (подберите нужное число) */
+  transform: translateY(-50%) rotate(-1deg);
+  /* Точная центровка по вертикали */
+  width: 37px;
+  /* Размер вашей SVG */
+  height: 37px;
+  background-repeat: no-repeat;
+  z-index: 2;
+  /* Картинка будет под текстом, если у текста z-index выше */
+  pointer-events: none;
+  /* Чтобы картинка не мешала кликать на кнопки/ссылки */
 }
 
 .main-star-small-4 {
-    position: absolute;
-    top: 568px;
-    /* Центрируем по вертикали */
-    right: 344px;
-    /* Сдвигаем вправо за край экрана (подберите нужное число) */
-    transform: translateY(-50%) rotate(-1deg);
-    /* Точная центровка по вертикали */
-    width: 83px;
-    /* Размер вашей SVG */
-    height: 83px;
-    background-repeat: no-repeat;
-    z-index: 2;
-    /* Картинка будет под текстом, если у текста z-index выше */
-    pointer-events: none;
-    /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+  position: absolute;
+  top: 568px;
+  /* Центрируем по вертикали */
+  right: 344px;
+  /* Сдвигаем вправо за край экрана (подберите нужное число) */
+  transform: translateY(-50%) rotate(-1deg);
+  /* Точная центровка по вертикали */
+  width: 83px;
+  /* Размер вашей SVG */
+  height: 83px;
+  background-repeat: no-repeat;
+  z-index: 2;
+  /* Картинка будет под текстом, если у текста z-index выше */
+  pointer-events: none;
+  /* Чтобы картинка не мешала кликать на кнопки/ссылки */
 }
 
 .main-angleUp {
-    position: absolute;
-    top: 82px;
-    /* Центрируем по вертикали */
-    right: 269px;
-    /* Сдвигаем вправо за край экрана (подберите нужное число) */
-    transform: translateY(-50%) rotate(-1deg);
-    /* Точная центровка по вертикали */
-    width: 317px;
-    /* Размер вашей SVG */
-    height: 163px;
-    background-repeat: no-repeat;
-    z-index: 2;
-    /* Картинка будет под текстом, если у текста z-index выше */
-    pointer-events: none;
-    /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+  position: absolute;
+  top: 82px;
+  /* Центрируем по вертикали */
+  right: 269px;
+  /* Сдвигаем вправо за край экрана (подберите нужное число) */
+  transform: translateY(-50%) rotate(-1deg);
+  /* Точная центровка по вертикали */
+  width: 317px;
+  /* Размер вашей SVG */
+  height: 163px;
+  background-repeat: no-repeat;
+  z-index: 2;
+  /* Картинка будет под текстом, если у текста z-index выше */
+  pointer-events: none;
+  /* Чтобы картинка не мешала кликать на кнопки/ссылки */
 }
 
 .main-angleMidle {
-    position: absolute;
-    top: 332px;
-    /* Центрируем по вертикали */
-   right: 231px;
-    /* Сдвигаем вправо за край экрана (подберите нужное число) */
-    transform: translateY(-50%) rotate(0deg);
-    /* Точная центровка по вертикали */
-    width: 142px;
-    /* Размер вашей SVG */
-    height: 179px;
-    background-repeat: no-repeat;
-    z-index: 2;
-    /* Картинка будет под текстом, если у текста z-index выше */
-    pointer-events: none;
-    /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+  position: absolute;
+  top: 332px;
+  /* Центрируем по вертикали */
+  right: 231px;
+  /* Сдвигаем вправо за край экрана (подберите нужное число) */
+  transform: translateY(-50%) rotate(0deg);
+  /* Точная центровка по вертикали */
+  width: 142px;
+  /* Размер вашей SVG */
+  height: 179px;
+  background-repeat: no-repeat;
+  z-index: 2;
+  /* Картинка будет под текстом, если у текста z-index выше */
+  pointer-events: none;
+  /* Чтобы картинка не мешала кликать на кнопки/ссылки */
 }
 
 .main-angleDown {
-    position: absolute;
-    top: 574px;
-    /* Центрируем по вертикали */
+  position: absolute;
+  top: 574px;
+  /* Центрируем по вертикали */
   right: 4.88px;
-    /* Сдвигаем вправо за край экрана (подберите нужное число) */
-    transform: translateY(-50%) rotate(-1deg);
-    /* Точная центровка по вертикали */
-    width: 219.88px;
-    /* Размер вашей SVG */
-    height: 418px;
-    background-repeat: no-repeat;
-    z-index: 0;
-    /* Картинка будет под текстом, если у текста z-index выше */
-    pointer-events: none;
-    /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+  /* Сдвигаем вправо за край экрана (подберите нужное число) */
+  transform: translateY(-50%) rotate(-1deg);
+  /* Точная центровка по вертикали */
+  width: 219.88px;
+  /* Размер вашей SVG */
+  height: 418px;
+  background-repeat: no-repeat;
+  z-index: 0;
+  /* Картинка будет под текстом, если у текста z-index выше */
+  pointer-events: none;
+  /* Чтобы картинка не мешала кликать на кнопки/ссылки */
 }
 
 .main-line {
-    position: absolute;
-    top: 711px;
-    /* Центрируем по вертикали */
-    right: 61px;
-    /* Сдвигаем вправо за край экрана (подберите нужное число) */
-    transform: translateY(-50%) rotate(-1deg);
-    /* Точная центровка по вертикали */
-    width: 34px;
-    /* Размер вашей SVG */
-    height: 124px;
-    background-repeat: no-repeat;
-    z-index: 0;
-    /* Картинка будет под текстом, если у текста z-index выше */
-    pointer-events: none;
-    /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+  position: absolute;
+  top: 711px;
+  /* Центрируем по вертикали */
+  right: 61px;
+  /* Сдвигаем вправо за край экрана (подберите нужное число) */
+  transform: translateY(-50%) rotate(-1deg);
+  /* Точная центровка по вертикали */
+  width: 34px;
+  /* Размер вашей SVG */
+  height: 124px;
+  background-repeat: no-repeat;
+  z-index: 0;
+  /* Картинка будет под текстом, если у текста z-index выше */
+  pointer-events: none;
+  /* Чтобы картинка не мешала кликать на кнопки/ссылки */
 }
 
 .main-triangle {
-    position: absolute;
-    top: 512px;
-    /* Центрируем по вертикали */
-    right: 113px;
-    /* Сдвигаем вправо за край экрана (подберите нужное число) */
-    transform: translateY(-50%) rotate(-1deg);
-    /* Точная центровка по вертикали */
-    width: 80px;
-    /* Размер вашей SVG */
-    height: 126px;
-    background-repeat: no-repeat;
-    z-index: 2;
-    /* Картинка будет под текстом, если у текста z-index выше */
-    pointer-events: none;
-    /* Чтобы картинка не мешала кликать на кнопки/ссылки */
+  position: absolute;
+  top: 512px;
+  /* Центрируем по вертикали */
+  right: 113px;
+  /* Сдвигаем вправо за край экрана (подберите нужное число) */
+  transform: translateY(-50%) rotate(-1deg);
+  /* Точная центровка по вертикали */
+  width: 80px;
+  /* Размер вашей SVG */
+  height: 126px;
+  background-repeat: no-repeat;
+  z-index: 2;
+  /* Картинка будет под текстом, если у текста z-index выше */
+  pointer-events: none;
+  /* Чтобы картинка не мешала кликать на кнопки/ссылки */
 }
 
 .about-games-box-link-1 {
-    text-decoration: none;
-    color: inherit;
-    width: 378px;
-    height: 473px;
-    border-radius: 30px;
+  text-decoration: none;
+  color: inherit;
+  width: 378px;
+  height: 473px;
+  border-radius: 30px;
 }
 
 .about-games-box-link-2 {
-    text-decoration: none;
-    color: inherit;
-    width: 378px;
-    height: 512px;
-    border-radius: 30px;
+  text-decoration: none;
+  color: inherit;
+  width: 378px;
+  height: 512px;
+  border-radius: 30px;
 }
 
 .about-games-box-link-3 {
-    text-decoration: none;
-    color: inherit;
-    z-index: 1;
-    width: 378px;
-    height: 473px;
-    border-radius: 30px;
+  text-decoration: none;
+  color: inherit;
+  z-index: 1;
+  width: 378px;
+  height: 473px;
+  border-radius: 30px;
 }
 
 .about-games-box-link-4 {
-    text-decoration: none;
-    color: inherit;
-    width: 378px;
-    height: 314px;
-    border-radius: 30px;
+  text-decoration: none;
+  color: inherit;
+  width: 378px;
+  height: 314px;
+  border-radius: 30px;
 }
 
 .about-games-box-link-5 {
-    text-decoration: none;
-    color: inherit;
-    width: 378px;
-    height: 473px;
-    border-radius: 30px;
+  text-decoration: none;
+  color: inherit;
+  width: 378px;
+  height: 473px;
+  border-radius: 30px;
 }
 
 .about-games-box-link-6 {
-    text-decoration: none;
-    color: inherit;
-    width: 378px;
-    height: 314px;
-    border-radius: 30px;
-    
+  text-decoration: none;
+  color: inherit;
+  width: 378px;
+  height: 314px;
+  border-radius: 30px;
 }
+
+.ftr {
+  height: 150px;
+  background-color: rgb(189, 237, 53);
+}
+
+.ftr-title {
+  text-align: center;
+  padding-top: 61px;
+  width: 285px;
+  height: 29px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: "SemiBold";
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  margin-left: 459px;
+}
+
+.main-mobile-star-big {
+  display: none;
+}
+
+.main-mob-star-small-1 {
+  display: none;
+}
+
+.main-mob-star-small-2 {
+  display: none;
+}
+
+.main-mob-star-small-3 {
+  display: none;
+}
+
+.main-mob-star-small-4 {
+  display: none;
+}
+
+.mini-games {
+  height: 3500px;
+  background-color: rgb(32, 32, 39);
+  margin-top: -1px;
+}
+
+.mini-games-title {
+  font-family: "Montserrat";
+  font-weight: 700px;
+  font-style: Bold;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  color: rgb(255, 255, 255);
+  padding-top: 46px;
+  margin-bottom: 72px;
+}
+
+.mini-games-play-all {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mini-games-play-1 {
+  width: 1200px;
+  height: 500px;
+  border-radius: 47px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  gap: 48px;
+}
+
+.mini-games-play-2 {
+  width: 1200px;
+  height: 500px;
+  border-radius: 47px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  gap: 48px;
+}
+
+.mini-games-play-3 {
+  width: 1200px;
+  height: 500px;
+  border-radius: 47px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  gap: 48px;
+}
+
+.mini-games-play-4 {
+  width: 1200px;
+  height: 500px;
+  border-radius: 47px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  gap: 48px;
+}
+
+.mini-games-play-5 {
+  width: 1200px;
+  height: 500px;
+  border-radius: 47px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  gap: 48px;
+}
+
+.mini-games-play-6 {
+  width: 1200px;
+  height: 500px;
+  border-radius: 47px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  gap: 48px;
+}
+
+.mini-games__item-pic {
+  width: 600px;
+  height: 500px;
+}
+
+.mini-games-name-left {
+  margin-top: 48px;
+  margin-left: 48px;
+  width: 504px;
+  height: 147px;
+}
+
+.mini-games-name-right {
+  margin-top: 48px;
+  margin-right: 48px;
+  width: 504px;
+  height: 147px;
+}
+
+.mini-games-name {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  margin-bottom: 24px;
+}
+
+.mini-games-discription {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: "Regular";
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  width: 457px;
+  height: 64px;
+  margin-bottom: 36px;
+}
+
+.mini-games-btn {
+  width: 247px;
+  height: 66px;
+  border-radius: 60px;
+  padding-top: 16px;
+  padding-right: 28px;
+  padding-bottom: 16px;
+  padding-left: 28px;
+  background-color: rgb(32, 32, 39);
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 600px;
+  font-style: "SemiBold";
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 142%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.mini-games-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.star-mini-1 {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  right: 123.79px;
+  margin-top: 75px;
+}
+
+.star-mini-2 {
+  position: absolute;
+  width: 68.86px;
+  height: 68.86px;
+  right: 44.91px;
+  margin-top: 126px;
+}
+
+.star-mini-3 {
+  position: absolute;
+  width: 69px;
+  height: 69px;
+  margin-top: 3366px;
+  right: 52px;
+}
+
+.star-mini-4 {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  right: 150px;
+  margin-top: 3414px;
+}
+
+@media (max-width: 738px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .main-angleUp {
+    display: none;
+  }
+  .main-angleMidle {
+    display: none;
+  }
+  .main-angleDown {
+    display: none;
+  }
+  .main-line {
+    display: none;
+  }
+  .main-triangle {
+    display: none;
+  }
+  .main-star-small-1 {
+    display: none;
+  }
+  .main-star-small-2 {
+    display: none;
+  }
+  .main-star-small-3 {
+    display: none;
+  }
+  .main-star-small-4 {
+    display: none;
+  }
+  .main-star-big {
+    display: none;
+  }
+  .main-mob-star-small-1 {
+    display: flex;
+    position: absolute;
+    top: 64px;
+    left: 92px;
+  }
+  .main-mob-star-small-2 {
+    display: flex;
+    position: absolute;
+    left: 38px;
+    top: 97px;
+  }
+  .main-mob-star-small-3 {
+    display: flex;
+    position: absolute;
+    left: 273px;
+    top: 557px;
+  }
+  .main-mob-star-small-4 {
+    display: flex;
+    position: absolute;
+    left: 304px;
+    top: 580px;
+  }
+  .main-mobile-star-big {
+    display: flex;
+    position: absolute;
+    left: 215px;
+  }
+  .main-h1 {
+    width: 262px;
+    height: 196px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 40.5px;
+  }
+  .main-h2 {
+    width: 296px;
+    height: 60px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: "Regular";
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px;
+    margin-left: 23.5px;
+    margin-bottom: 36px;
+  }
+  .main-btn {
+    width: 285px;
+    height: 55px;
+    margin-left: 29px;
+  }
+  .ftr-title {
+    margin-left: 0px;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  /* Создаю новый блок "мини - игры"
+  .about-games-svg-Big{
+  display: none;
+  }
+  .about-games-svg-Small-1{
+  display: none;
+  }
+  .about-games-svg-Small-2{
+  display: none;
+  }
+  .about-games-title-h2{
+      display:none;
+  }
+  .about-games-title-h3{
+      display: none;
+  }
+  .mini-games{
+          width: 314px;
+      height: 78px;
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 64px;
+      line-height: 100%;
+      letter-spacing: 0px;
+      vertical-align: middle;
+      color: white;
+      margin-bottom: 24px;
+      display:flex;
+  }
+  .about-games{
+     padding-left: 16px;
+     padding-right: 16px;
+     padding-bottom: 144px;
+     padding-top: 0px;
+     padding-top: 48.34px;
+     height: 3740px;
+  }
+  .about-games-box-all{
+      display: flex;
+      flex-direction: column;
+  }
+  .about-games-box{
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+  .about-games-box-link-1{
+       width: 343px;
+  height: 529px;
+  }
+  .about-games-box-1{
+      width: 343px;
+  height: 529px;
+  } */
+  .about-games {
+    display: none;
+  }
+  .star-mini-1 {
+    display: none;
+  }
+  .star-mini-2 {
+    display: none;
+  }
+  .star-mini-3 {
+    display: none;
+  }
+  .star-mini-4 {
+    display: none;
+  }
+  .mini-games-play-all {
+    gap: 24px;
+  }
+  .mini-games {
+    height: 3740px;
+  }
+  .mini-games-play-1 {
+    width: 343px;
+    height: 528.6px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mini-games-play-2 {
+    width: 343px;
+    height: 528.6px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+  }
+  .mini-games-play-3 {
+    width: 343px;
+    height: 567.6px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mini-games-play-4 {
+    width: 343px;
+    height: 606.6px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+  }
+  .mini-games-play-5 {
+    width: 343px;
+    height: 567.63px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .mini-games-play-6 {
+    width: 343px;
+    height: 626.6px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+  }
+  .mini-games__item-pic {
+    width: 343px;
+    height: 285px;
+  }
+  .mini-games-name-left {
+    margin-top: 0px;
+    margin-right: 29.04px;
+    margin-left: 29.04px;
+    width: 285px;
+    height: 182px;
+  }
+  .mini-games-name-right {
+    margin-top: 0px;
+    margin-right: 29.04px;
+    margin-left: 29.04px;
+    width: 285px;
+    height: 182px;
+  }
+  .mini-games-name {
+    font-family: "Montserrat";
+    font-weight: 700px;
+    font-style: Bold;
+    font-size: 32px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin: bottom 16px;
+    width: 285px;
+    height: 39px;
+  }
+  .mini-games-discription {
+    font-family: "Montserrat";
+    font-weight: 400px;
+    font-style: "Regular";
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin-bottom: 32px;
+    width: 249px;
+    height: 40px;
+  }
+  .mini-games-btn {
+    width: 285px;
+    height: 55px;
+    gap: 10px;
+    border-width: 1px;
+    border-radius: 60px;
+    padding-top: 16px;
+    padding-right: 28px;
+    padding-bottom: 16px;
+    padding-left: 28px;
+  }
+}/*# sourceMappingURL=style.css.map */
