@@ -120,7 +120,7 @@ if (monthNumber >= 1 && monthNumber <= 12) {
             break;
     }
 } else {
-    console.log('ошибка ');
+     console.log('ошибка ');
 }
 
 
