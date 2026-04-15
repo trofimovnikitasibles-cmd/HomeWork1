@@ -1,5 +1,5 @@
-//#1
-let a = 10;
+//#1 
+/*let a = 10;
 alert (a);
 a = 20;
 alert (a);
@@ -58,4 +58,23 @@ const User = {
 //#10
 {const name = prompt("Ваше имя");
     alert(name);
+}; */
+
+//HW3
+//#1
+let password = 12345
+let message = prompt ('Введите пароль')
+if (password === 12345) {alert ('Пароль введен верно')
+} 
+else {alert('Пароль введен неправильно')
+};
+
+//#2
+let c = 1;
+if (c>0 && c<10) {
+   console.log('Верно');
+} else {
+   console.log('Неверно');
 }
+
+//#3
