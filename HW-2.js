@@ -58,7 +58,7 @@ const User = {
 //#10
 {const name = prompt("Ваше имя");
     alert(name);
-}; */
+}; 
 
 //HW3
 //#1
@@ -122,6 +122,6 @@ if (monthNumber >= 1 && monthNumber <= 12) {
 } else {
      console.log('ошибка ');
 }
-
+*/
 
 
