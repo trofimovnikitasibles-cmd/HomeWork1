@@ -64,7 +64,7 @@ const User = {
 //#1
 // 
 
-
+/*
 let password = '12345';
 let message = prompt ('Введите пароль');
 if (message === password) {alert ('Пароль введен верно');
@@ -125,6 +125,18 @@ if (monthNumber >= 1 && monthNumber <= 12) {
 } else {
      console.log('ошибка ');
 }
+*/
 
-
-
+/*HW#4 циклы*/
+/*№1*/
+let i = 0;
+while (i<2) {
+    console.log('Привет');
+    i++
+}
+/*№2*/
+let n = 0;
+while(n<6){
+    console.log(n);
+    n++
+}
