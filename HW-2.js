@@ -63,7 +63,7 @@ const User = {
 //HW3
 //#1
 // 
-/*
+
 
 let password = '12345';
 let message = prompt ('Введите пароль');
@@ -125,6 +125,6 @@ if (monthNumber >= 1 && monthNumber <= 12) {
 } else {
      console.log('ошибка ');
 }
-*/
+
 
 
