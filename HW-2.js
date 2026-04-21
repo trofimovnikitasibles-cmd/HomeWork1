@@ -168,6 +168,12 @@ while (n/=2){
     console.log(n)
     console.log(num)
 }
+/*№6*/
+let friday = 5;
+let MonthsDay = 31;
+for(let day = friday; day<=31 ; day +=7){
+    console.log(`Сегодня пятница,${day}-е число. Необходимо подготовить отчет.`)
+}
 
 
 
