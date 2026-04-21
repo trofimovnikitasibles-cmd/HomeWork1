@@ -140,3 +140,9 @@ while(n<6){
     console.log(n);
     n++
 } 
+/*№3*/
+let x =7;
+while (x>=7 && x<=22) {
+    console.log(x);
+    x++
+}
