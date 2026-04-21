@@ -59,15 +59,18 @@ const User = {
 {const name = prompt("Ваше имя");
     alert(name);
 }; 
-
+*/
 //HW3
 //#1
-let password = 12345
-let message = prompt ('Введите пароль')
-if (password === 12345) {alert ('Пароль введен верно')
+// 
+
+
+let password = '12345';
+let message = prompt ('Введите пароль');
+if (message === password) {alert ('Пароль введен верно');
 } 
-else {alert('Пароль введен неправильно')
-};
+else {alert('Пароль введен неправильно');
+}
 
 //#2
 let c = 1;
@@ -122,6 +125,6 @@ if (monthNumber >= 1 && monthNumber <= 12) {
 } else {
      console.log('ошибка ');
 }
-*/
+
 
 
