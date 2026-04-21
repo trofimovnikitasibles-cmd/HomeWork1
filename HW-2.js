@@ -146,3 +146,19 @@ while (x>=7 && x<=22) {
     console.log(x);
     x++
 }
+/*№4*/
+const obj = {
+  "Коля": '200',
+  "Вася": '300',
+  "Петя": '400'
+};
+
+for (let key in obj) {
+  console.log(`${key} — Имя сотрудника ${obj[key]} сумма $`);
+}
+
+
+
+
+
+
