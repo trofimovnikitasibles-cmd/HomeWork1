@@ -135,10 +135,10 @@ while (i<2) {
     i++
 }
 /*№2*/
-let n = 0;
-while(n<6){
-    console.log(n);
-    n++
+let a = 0;
+while(a<6){
+    console.log(a);
+    a++
 } 
 /*№3*/
 let x =7;
@@ -146,3 +146,31 @@ while (x>=7 && x<=22) {
     console.log(x);
     x++
 }
+/*№4*/
+const obj = {
+  "Коля": '200',
+  "Вася": '300',
+  "Петя": '400'
+};
+
+for (let key in obj) {
+  console.log(`${key} — Имя сотрудника ${obj[key]} сумма $`);
+}
+/*№5*/
+ 
+let n = 1000;
+let num = 0;
+while (n/=2){
+    if(n<50){
+        break;
+    }
+    num++
+    console.log(n)
+    console.log(num)
+}
+
+
+
+
+
+
