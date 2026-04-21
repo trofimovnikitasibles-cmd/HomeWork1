@@ -156,7 +156,7 @@ const obj = {
 for (let key in obj) {
   console.log(`${key} — Имя сотрудника ${obj[key]} сумма $`);
 }
-
+ 
 
 
 
