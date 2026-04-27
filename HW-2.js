@@ -245,4 +245,4 @@ function exercise4() {
     alert('Добро пожаловать!');
   }
 }
-exercise4()
+exercise4() 
