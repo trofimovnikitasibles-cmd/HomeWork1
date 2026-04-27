@@ -196,7 +196,7 @@ function guessTheNumber() {
 }
 
 /*№1*/
-let game1 = (a,b) =>{
+const game1 = (a,b) =>{
     if (a<b){
         return a;
     }
@@ -206,3 +206,13 @@ let game1 = (a,b) =>{
     else return b;
 }
 console.log(game1(4,8))
+
+/*№2*/
+function game2(n) {
+  if (n % 2 === 0) {
+    return 'Число четное';
+  } else {
+    return 'Число нечетное';
+  }
+}
+console.log(game2(12))
