@@ -175,8 +175,34 @@ for(let day = friday; day<=31 ; day +=7){
     console.log(`Сегодня пятница,${day}-е число. Необходимо подготовить отчет.`)
 }
 
+/* доп задания
+let k = 100;
+let iterations = 0;
+while (k -=7) {
+        if(k<-7){
+break;
+        }
+iterations++
+console.log(k)
+console.log(iterations)
+} */
 
 
+/*HW#5 функции*/
 
+function guessTheNumber() {
+    prompt(`Угадай число от 1 до 100`)
+    
+}
 
-
+/*№1*/
+let game1 = (a,b) =>{
+    if (a<b){
+        return a;
+    }
+    if (a===b){
+        return a;
+    }
+    else return b;
+}
+console.log(game1(4,8))
