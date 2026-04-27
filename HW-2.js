@@ -196,7 +196,7 @@ function guessTheNumber() {
 }
 
 /*№1*/
-const game1 = (a,b) =>{
+const exercise1 = (a,b) =>{
     if (a<b){
         return a;
     }
@@ -205,14 +205,44 @@ const game1 = (a,b) =>{
     }
     else return b;
 }
-console.log(game1(4,8))
+console.log(exercise1(4,8))
 
 /*№2*/
-function game2(n) {
+function exercise2(n) {
   if (n % 2 === 0) {
     return 'Число четное';
   } else {
     return 'Число нечетное';
   }
 }
-console.log(game2(12))
+console.log(exercise2(12))
+
+/*№3*/
+function exercise31(a){
+  return  a**2;
+
+}
+console.log(exercise31(3))
+
+
+function exercise32(a){
+   let square = a**2;
+   return square;
+}
+console.log(exercise32(5))
+
+/*№4*/
+
+function exercise4() {
+    const age =prompt('сколько вам лет?') 
+   if (age < 0) {
+    alert('Вы ввели неправильное значение');
+  } 
+  else if (age >=0  && age <=12) {
+    alert('Привет, друг!');
+  } 
+  else if (age >= 13) {
+    alert('Добро пожаловать!');
+  }
+}
+exercise4() 
