@@ -230,3 +230,19 @@ function exercise32(a){
    return square;
 }
 console.log(exercise32(5))
+
+/*№4*/
+
+function exercise4() {
+    const age =prompt('сколько вам лет?') 
+   if (age < 0) {
+    alert('Вы ввели неправильное значение');
+  } 
+  else if (age >=0  && age <=12) {
+    alert('Привет, друг!');
+  } 
+  else if (age >= 13) {
+    alert('Добро пожаловать!');
+  }
+}
+exercise4()
