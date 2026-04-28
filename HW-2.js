@@ -270,3 +270,28 @@ console.log(validateAndSum("текст", 5)); // Выдаст ошибку
 
 /*№6*/
 
+function checkAndCube() {
+    let input = prompt("Введите число:");
+    
+    // Проверка: пустая строка, строка с пробелами или не число
+    if (input === null || input.trim() === "" || isNaN(Number(input))) {
+        return 'Переданный параметр не является числом';
+    }
+
+    let n = Number(input);
+    let cube = Math.pow(n, 3); // или n ** 3
+
+    return `${n} в кубе равняется ${cube}`;
+}
+
+// Функция для автоматической проверки работы алгоритма (от 0 до 10)
+function testCube() {
+    for (let i = 0; i <= 10; i++) {
+        let result = i ** 3;
+        console.log(`${i} в кубе равняется ${result}`);
+    }
+}
+
+// Вызов функции с вводом
+console.log(checkAndCube());
+testCube();
