@@ -295,3 +295,45 @@ function testCube() {
 // Вызов функции с вводом
 console.log(checkAndCube());
 testCube();
+
+
+
+
+
+
+
+
+
+
+
+//
+function getCircleArea() {
+   // Используем 'this' для обращения к свойствам 'radius' 
+   return 3.14*this.radius**2  ;
+}
+function getCirclePerimeter() {
+   // Используем 'this' для обращения к свойствам 'radius' 
+   return this.radius * 2 * 3.14 ;
+}
+
+const circle1 = {
+   radius:9,
+
+   // Используем функции, объявленные выше, как методы объекта
+   getArea: getCircleArea,
+   getPerimeter: getCirclePerimeter
+};
+
+const circle2 = {
+   radius:15,   
+
+   // Используем функции, объявленные выше, как методы объекта
+ getArea: getCircleArea,
+   getPerimeter: getCirclePerimeter
+};
+
+// Вызываем методы объектов
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
