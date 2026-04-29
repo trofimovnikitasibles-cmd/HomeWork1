@@ -298,15 +298,7 @@ testCube();
 
 
 
-
-
-
-
-
-
-
-
-//
+// 
 function getCircleArea() {
    // Используем 'this' для обращения к свойствам 'radius' 
    return 3.14*this.radius**2  ;
