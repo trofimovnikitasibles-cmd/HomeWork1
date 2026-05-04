@@ -191,9 +191,35 @@ console.log(iterations)
 /*HW#5 функции*/
 
 function guessTheNumber() {
-    prompt(`Угадай число от 1 до 100`)
+  
+  const secretNumber = Math.floor(Math.random() * 100) + 1;
+  let userGuess = null;
+
+
+  while (userGuess !== secretNumber) {
+    userGuess = prompt("Угадай число от 1 до 100:");
+
     
+    if (userGuess === null) break;
+
+    userGuess = Number(userGuess);
+
+   
+    if (userGuess > secretNumber) {
+      alert("Загаданное число меньше!");
+    } else if (userGuess < secretNumber) {
+      alert("Загаданное число больше!");
+    }
+  }
+
+ 
+  if (userGuess === secretNumber) {
+    alert("Поздравляем! Вы угадали число " + secretNumber);
+  }
 }
+
+
+guessTheNumber();
 
 /*№1*/
 const exercise1 = (a,b) =>{
@@ -295,3 +321,39 @@ function testCube() {
 // Вызов функции с вводом
 console.log(checkAndCube());
 testCube();
+
+
+
+// 
+function getCircleArea() {
+   // Используем 'this' для обращения к свойствам 'radius' 
+   return 3.14*this.radius**2  ;
+}
+function getCirclePerimeter() {
+   // Используем 'this' для обращения к свойствам 'radius' 
+   return this.radius * 2 * 3.14 ;
+}
+
+const circle1 = {
+   radius:9,
+
+   // Используем функции, объявленные выше, как методы объекта
+   getArea: getCircleArea,
+   getPerimeter: getCirclePerimeter
+};
+
+const circle2 = {
+   radius:15,   
+
+   // Используем функции, объявленные выше, как методы объекта
+ getArea: getCircleArea,
+   getPerimeter: getCirclePerimeter
+};
+
+// Вызываем методы объектов
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
+
+
