@@ -191,9 +191,35 @@ console.log(iterations)
 /*HW#5 функции*/
 
 function guessTheNumber() {
-    prompt(`Угадай число от 1 до 100`)
+  
+  const secretNumber = Math.floor(Math.random() * 100) + 1;
+  let userGuess = null;
+
+
+  while (userGuess !== secretNumber) {
+    userGuess = prompt("Угадай число от 1 до 100:");
+
     
+    if (userGuess === null) break;
+
+    userGuess = Number(userGuess);
+
+   
+    if (userGuess > secretNumber) {
+      alert("Загаданное число меньше!");
+    } else if (userGuess < secretNumber) {
+      alert("Загаданное число больше!");
+    }
+  }
+
+ 
+  if (userGuess === secretNumber) {
+    alert("Поздравляем! Вы угадали число " + secretNumber);
+  }
 }
+
+
+guessTheNumber();
 
 /*№1*/
 const exercise1 = (a,b) =>{
@@ -329,3 +355,5 @@ console.log(circle1.getArea());
 console.log(circle1.getPerimeter());
 console.log(circle2.getArea());
 console.log(circle2.getPerimeter());
+
+
