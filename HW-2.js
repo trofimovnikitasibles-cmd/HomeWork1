@@ -383,5 +383,16 @@ console.log(exampleSplit);
 exampleJoin = exampleSplit.join (' ');
 console.log(exampleJoin);
 
+//№4
+const matrix = Array(3).fill().map(() => Array(3).fill(1));
+
+console.log(matrix); 
+
+
+
+
+
+
+
 
 
