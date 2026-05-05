@@ -1,5 +1,6 @@
+/*
 //#1 
-/*let a = 10;
+let a = 10;
 alert (a);
 a = 20;
 alert (a);
@@ -59,12 +60,12 @@ const User = {
 {const name = prompt("Ваше имя");
     alert(name);
 }; 
-*/
+
 //HW3
 //#1
 // 
 
-/*
+
 let password = '12345';
 let message = prompt ('Введите пароль');
 if (message === password) {alert ('Пароль введен верно');
@@ -125,28 +126,28 @@ if (monthNumber >= 1 && monthNumber <= 12) {
 } else {
      console.log('ошибка ');
 }
-*/
 
-/*HW#4 циклы*/
-/*№1*/
+
+//HW#4 циклы
+//№1
 let i = 0;
 while (i<2) {
     console.log('Привет');
     i++
 }
-/*№2*/
+//№2
 let a = 0;
 while(a<6){
     console.log(a);
     a++
 } 
-/*№3*/
+//№3
 let x =7;
 while (x>=7 && x<=22) {
     console.log(x);
     x++
 }
-/*№4*/
+//№4
 const obj = {
   "Коля": '200',
   "Вася": '300',
@@ -156,7 +157,7 @@ const obj = {
 for (let key in obj) {
   console.log(`${key} — Имя сотрудника ${obj[key]} сумма $`);
 }
-/*№5*/
+//№5
  
 let n = 1000;
 let num = 0;
@@ -168,14 +169,14 @@ while (n/=2){
     console.log(n)
     console.log(num)
 }
-/*№6*/
+//№6
 let friday = 5;
 let MonthsDay = 31;
 for(let day = friday; day<=31 ; day +=7){
     console.log(`Сегодня пятница,${day}-е число. Необходимо подготовить отчет.`)
 }
 
-/* доп задания
+ доп задания
 let k = 100;
 let iterations = 0;
 while (k -=7) {
@@ -185,10 +186,10 @@ break;
 iterations++
 console.log(k)
 console.log(iterations)
-} */
+} 
 
 
-/*HW#5 функции*/
+//HW#5 функции
 
 function guessTheNumber() {
   
@@ -219,9 +220,9 @@ function guessTheNumber() {
 }
 
 
-guessTheNumber();
 
-/*№1*/
+
+//№1
 const exercise1 = (a,b) =>{
     if (a<b){
         return a;
@@ -233,7 +234,7 @@ const exercise1 = (a,b) =>{
 }
 console.log(exercise1(4,8))
 
-/*№2*/
+//№2
 function exercise2(n) {
   if (n % 2 === 0) {
     return 'Число четное';
@@ -243,7 +244,7 @@ function exercise2(n) {
 }
 console.log(exercise2(12))
 
-/*№3*/
+//№3
 function exercise31(a){
   return  a**2;
 
@@ -257,7 +258,7 @@ function exercise32(a){
 }
 console.log(exercise32(5))
 
-/*№4*/
+//№4
 
 function exercise4() {
     const age =prompt('сколько вам лет?') 
@@ -273,7 +274,7 @@ function exercise4() {
 }
 exercise4() 
 
-/*№5*/
+//№5
 
 function validateAndSum(a, b) {
   // Преобразуем входные данные в числа
@@ -294,7 +295,7 @@ console.log(validateAndSum(10, "20"));    // Сработает (строка с
 console.log(validateAndSum("текст", 5)); // Выдаст ошибку
 
 
-/*№6*/
+//№6
 
 function checkAndCube() {
     let input = prompt("Введите число:");
@@ -355,5 +356,26 @@ console.log(circle1.getArea());
 console.log(circle1.getPerimeter());
 console.log(circle2.getArea());
 console.log(circle2.getPerimeter());
+*/
+
+//HW#6 Массивы
+
+// Реализация игры №2
+
+
+//№1
+
+const numbs = ['1','5','4','10','0','3'];
+for (let i = 0; i < numbs.length; i++){
+    if(numbs [i]==10) break;
+    console.log(numbs[i]);
+}
+//№2
+numbs.forEach((el, index) => {
+    console.log(`${el}:${index}`);
+});
+
+
+
 
 
