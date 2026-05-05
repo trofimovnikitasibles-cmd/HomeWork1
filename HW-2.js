@@ -461,3 +461,29 @@ const words = ["яблоко", "банан", "киви"];
 const lengths = getWordLengths(words);
 
 console.log(lengths); 
+
+//№13
+function getNegativeNumbers(arr) {
+  return arr.filter(num => num < 0);
+}
+
+const numbers = [10, -5, 3, -2, 0, -11, 8];
+const negatives = getNegativeNumbers(numbers);
+
+console.log(negatives); 
+
+//№14
+// 1. Создаем исходный массив из 10 случайных чисел
+const originalArray = [];
+for (let i = 0; i < 10; i++) {
+  // Генерируем число от 0 до 10 и округляем (например, до целого)
+  const randomNumber = Math.floor(Math.random() * 11);
+  originalArray.push(randomNumber);
+}
+
+// 2. С помощью filter() выбираем только четные значения
+const evenArray = originalArray.filter(num => num % 2 === 0);
+
+// 3. Выводим результаты в консоль
+console.log("Исходный массив:", originalArray);
+console.log("Массив с четными значениями:", evenArray);
