@@ -461,3 +461,13 @@ const words = ["яблоко", "банан", "киви"];
 const lengths = getWordLengths(words);
 
 console.log(lengths); 
+
+//№13
+function getNegativeNumbers(arr) {
+  return arr.filter(num => num < 0);
+}
+
+const numbers = [10, -5, 3, -2, 0, -11, 8];
+const negatives = getNegativeNumbers(numbers);
+
+console.log(negatives); /
