@@ -370,6 +370,11 @@ for (let i = 0; i < numbs.length; i++){
     if(numbs [i]==10) break;
     console.log(numbs[i]);
 }
+//№2
+numbs.forEach((el, index) => {
+    console.log(`${el}:${index}`);
+});
+
 
 
 
