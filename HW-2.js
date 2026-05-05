@@ -450,3 +450,14 @@ function getSquares(arr) {
 
 const input = [1, 2, 3, 4, 5];
 console.log(getSquares(input)); 
+
+//№12
+function getWordLengths(arr) {
+  
+  return arr.map(word => word.length);
+}
+
+const words = ["яблоко", "банан", "киви"];
+const lengths = getWordLengths(words);
+
+console.log(lengths); 
