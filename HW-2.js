@@ -418,7 +418,16 @@ else {
   alert("Не угадал");
 }
 
+//№8
+let rev = 'abcdef';
+revSplit = rev.split('')
+console.log(revSplit);
 
+revReverse = revSplit.reverse();
+console.log(revReverse);
+
+revJoin = revReverse.join();
+console.log(revJoin);
 
 
 
