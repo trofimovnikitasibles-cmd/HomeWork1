@@ -442,3 +442,22 @@ for (let i = 0; i < numbers.length - 1; i++) {
   console.log(`Сумма ${numbers[i]} и ${numbers[i + 1]} равна: ${sum}`);
 }
 
+//№11
+function getSquares(arr) {
+
+  return arr.map(num => num ** 2);
+}
+
+const input = [1, 2, 3, 4, 5];
+console.log(getSquares(input)); 
+
+//№12
+function getWordLengths(arr) {
+  
+  return arr.map(word => word.length);
+}
+
+const words = ["яблоко", "банан", "киви"];
+const lengths = getWordLengths(words);
+
+console.log(lengths); 
