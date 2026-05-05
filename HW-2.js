@@ -487,3 +487,21 @@ const evenArray = originalArray.filter(num => num % 2 === 0);
 // 3. Выводим результаты в консоль
 console.log("Исходный массив:", originalArray);
 console.log("Массив с четными значениями:", evenArray);
+
+//№15
+// 1. Генерируем массив из 6 случайных чисел от 1 до 10
+const numbers = [];
+for (let i = 0; i < 6; i++) {
+  const randomNumber = Math.floor(Math.random() * 10) + 1;
+  numbers.push(randomNumber);
+}
+
+// 2. Вычисляем сумму всех элементов через reduce()
+const sum = numbers.reduce((accumulator, current) => accumulator + current, 0);
+
+// 3. Находим среднее арифметическое
+const average = sum / numbers.length;
+
+// Вывод результатов
+console.log("Массив:", numbers);
+console.log("Среднее арифметическое:", average.toFixed(2)); // Округлили до 2 знаков
