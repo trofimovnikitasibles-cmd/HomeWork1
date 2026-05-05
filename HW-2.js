@@ -429,5 +429,16 @@ console.log(revReverse);
 revJoin = revReverse.join();
 console.log(revJoin);
 
+//№9
+let double = [[1, 2, 3],[4, 5, 6]];
+slice = [...double[0],...double[1]];
+console.log(slice);
 
+//№10
+const numbers = [2, 5, 8, 1, 9, 3, 7];
+
+for (let i = 0; i < numbers.length - 1; i++) {
+  let sum = numbers[i] + numbers[i + 1];
+  console.log(`Сумма ${numbers[i]} и ${numbers[i + 1]} равна: ${sum}`);
+}
 
