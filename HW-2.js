@@ -219,7 +219,7 @@ function guessTheNumber() {
 }
 
 
-guessTheNumber();
+
 
 /*№1*/
 const exercise1 = (a,b) =>{
