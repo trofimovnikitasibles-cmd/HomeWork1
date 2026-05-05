@@ -389,10 +389,21 @@ const matrix = Array(3).fill().map(() => Array(3).fill(1));
 console.log(matrix); 
 
 
+//№5
+let pushing = '1=1=1';
+pushingSplit = pushing.split('=');
 
+pushingSplit.push('2','2','2');
+console.log(pushingSplit);
 
+//№6
+let del = [9, 8, 7, 'a', 6, 5];
+delSort = del.sort();
+console.log(delSort);
 
-
+delPop = delSort.pop();
+console.log(delSort);
+console.log(delPop);
 
 
 
