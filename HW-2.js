@@ -405,5 +405,29 @@ delPop = delSort.pop();
 console.log(delSort);
 console.log(delPop);
 
+//№7
+let search = [9, 8, 7, 6, 5];
+let userInput = prompt('Угадай число');
+let userAnswer = Number(userInput);
+
+if(search.includes(userAnswer)){
+    
+  alert("Угадал");
+} 
+else {
+  alert("Не угадал");
+}
+
+//№8
+let rev = 'abcdef';
+revSplit = rev.split('')
+console.log(revSplit);
+
+revReverse = revSplit.reverse();
+console.log(revReverse);
+
+revJoin = revReverse.join();
+console.log(revJoin);
+
 
 
