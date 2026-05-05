@@ -375,7 +375,13 @@ numbs.forEach((el, index) => {
     console.log(`${el}:${index}`);
 });
 
+//№3
+const example = '1=3=5=10=20';
+exampleSplit = example.split('=');
+console.log(exampleSplit);
 
+exampleJoin = exampleSplit.join (' ');
+console.log(exampleJoin);
 
 
 
