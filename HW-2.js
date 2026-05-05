@@ -429,5 +429,7 @@ console.log(revReverse);
 revJoin = revReverse.join();
 console.log(revJoin);
 
-
-
+//№9
+let double = [[1, 2, 3],[4, 5, 6]];
+slice = [...double[0],...double[1]];
+console.log(slice);
