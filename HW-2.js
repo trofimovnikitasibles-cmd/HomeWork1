@@ -396,7 +396,14 @@ pushingSplit = pushing.split('=');
 pushingSplit.push('2','2','2');
 console.log(pushingSplit);
 
+//№6
+let del = [9, 8, 7, 'a', 6, 5];
+delSort = del.sort();
+console.log(delSort);
 
+delPop = delSort.pop();
+console.log(delSort);
+console.log(delPop);
 
 
 
