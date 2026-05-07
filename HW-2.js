@@ -361,10 +361,37 @@ console.log(circle2.getPerimeter());
 //HW#6 Массивы
 
 // Реализация игры №2
+function simpleArithmetic() {
+  const operators = ['+', '-', '*', '/'];
+  const a = Math.floor(Math.random() * 10) + 1;
+  const b = Math.floor(Math.random() * 10) + 1;
+  const op = operators[Math.floor(Math.random() * operators.length)];
 
+  let correctAnswer;
+  let task;
+
+  if (op === '/') {
+    // Чтобы не было дробей, делим произведение на число
+    correctAnswer = a;
+    task = `${a * b} / ${b}`;
+  } else {
+    task = `${a} ${op} ${b}`;
+    // Используем eval для быстрого вычисления правильного ответа из строки
+    correctAnswer = eval(task);
+  }
+
+  const userAnswer = prompt(`Решите задачу: ${task}`);
+
+  if (userAnswer !== null) {
+    if (Number(userAnswer) === correctAnswer) {
+      alert("Верно!");
+    } else {
+      alert(`Неверно. Правильный ответ: ${correctAnswer}`);
+    }
+  }
+}
 
 //№1
-
 const numbs = ['1','5','4','10','0','3'];
 for (let i = 0; i < numbs.length; i++){
     if(numbs [i]==10) break;
@@ -467,8 +494,8 @@ function getNegativeNumbers(arr) {
   return arr.filter(num => num < 0);
 }
 
-const numbers = [10, -5, 3, -2, 0, -11, 8];
-const negatives = getNegativeNumbers(numbers);
+const example13 = [10, -5, 3, -2, 0, -11, 8];
+const negatives = getNegativeNumbers(example13);
 
 console.log(negatives); 
 
@@ -490,10 +517,10 @@ console.log("Массив с четными значениями:", evenArray);
 
 //№15
 // 1. Генерируем массив из 6 случайных чисел от 1 до 10
-const numbers = [];
+const example15 = [];
 for (let i = 0; i < 6; i++) {
   const randomNumber = Math.floor(Math.random() * 10) + 1;
-  numbers.push(randomNumber);
+  example15.push(randomNumber);
 }
 
 // 2. Вычисляем сумму всех элементов через reduce()
