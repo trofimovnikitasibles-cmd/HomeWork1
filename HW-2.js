@@ -392,23 +392,20 @@ function simpleArithmetic() {
 }
 
 //№1
-const numbs = ['1','5','4','10','0','3'];
+const numbs = [1,5,4,10,0,3];
 for (let i = 0; i < numbs.length; i++){
-    if(numbs [i]==10) break;
+    if(numbs [i]==0) break;
     console.log(numbs[i]);
+    
 }
 //№2
-numbs.forEach((el, index) => {
-    console.log(`${el}:${index}`);
-});
+console.log(numbs.indexOf(4));
 
 //№3
-const example = '1=3=5=10=20';
-exampleSplit = example.split('=');
-console.log(exampleSplit);
+const nmb = [1, 3, 5, 10, 20];
+const joinExample = nmb.join(' ');
 
-exampleJoin = exampleSplit.join (' ');
-console.log(exampleJoin);
+console.log(joinExample);
 
 //№4
 const matrix = Array(3).fill().map(() => Array(3).fill(1));
@@ -417,11 +414,10 @@ console.log(matrix);
 
 
 //№5
-let pushing = '1=1=1';
-pushingSplit = pushing.split('=');
+let pushing = [1,1,1];
+pushing.push(2,2,2)
 
-pushingSplit.push('2','2','2');
-console.log(pushingSplit);
+console.log(pushing);
 
 //№6
 let del = [9, 8, 7, 'a', 6, 5];
@@ -446,15 +442,10 @@ else {
 }
 
 //№8
-let rev = 'abcdef';
-revSplit = rev.split('')
-console.log(revSplit);
+const str = 'abcdef';
+const reversed = str.split('').reverse().join('');
 
-revReverse = revSplit.reverse();
-console.log(revReverse);
-
-revJoin = revReverse.join();
-console.log(revJoin);
+console.log(reversed); 
 
 //№9
 let double = [[1, 2, 3],[4, 5, 6]];
@@ -463,10 +454,9 @@ console.log(slice);
 
 //№10
 const numbers = [2, 5, 8, 1, 9, 3, 7];
-
-for (let i = 0; i < numbers.length - 1; i++) {
-  let sum = numbers[i] + numbers[i + 1];
-  console.log(`Сумма ${numbers[i]} и ${numbers[i + 1]} равна: ${sum}`);
+for (let i = 0; i < splitExample.length - 1; i++) {
+  let sum = splitExample[i] + splitExample[i + 1];
+  console.log(`Сумма ${splitExample[i]} и ${splitExample[i + 1]} равна: ${sum}`);
 }
 
 //№11
@@ -532,3 +522,7 @@ const average = sum / numbers.length;
 // Вывод результатов
 console.log("Массив:", numbers);
 console.log("Среднее арифметическое:", average.toFixed(2)); // Округлили до 2 знаков
+
+
+
+
