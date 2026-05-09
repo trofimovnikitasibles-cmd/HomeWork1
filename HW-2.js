@@ -392,12 +392,15 @@ function simpleArithmetic() {
 }
 
 //№1
-const numbs = [1,5,4,10,0,3];
-for (let i = 0; i < numbs.length; i++){
-    if(numbs [i]==0) break;
-    console.log(numbs[i]);
-    
+const numbs = [1, 5, 4, 10, 0, 3];
+
+for (const num of numbs) {
+  console.log(num);
+  if (num === 10) {
+    break;
+  }
 }
+
 //№2
 console.log(numbs.indexOf(4));
 
@@ -453,7 +456,7 @@ slice = [...double[0],...double[1]];
 console.log(slice);
 
 //№10
-const numbers = [2, 5, 8, 1, 9, 3, 7];
+const splitExample = [2, 5, 8, 1, 9, 3, 7];
 for (let i = 0; i < splitExample.length - 1; i++) {
   let sum = splitExample[i] + splitExample[i + 1];
   console.log(`Сумма ${splitExample[i]} и ${splitExample[i + 1]} равна: ${sum}`);
@@ -514,13 +517,13 @@ for (let i = 0; i < 6; i++) {
 }
 
 // 2. Вычисляем сумму всех элементов через reduce()
-const sum = numbers.reduce((accumulator, current) => accumulator + current, 0);
+const sum = example15.reduce((accumulator, current) => accumulator + current, 0);
 
 // 3. Находим среднее арифметическое
-const average = sum / numbers.length;
+const average = sum / example15.length;
 
 // Вывод результатов
-console.log("Массив:", numbers);
+console.log("Массив:", example15);
 console.log("Среднее арифметическое:", average.toFixed(2)); // Округлили до 2 знаков
 
 
