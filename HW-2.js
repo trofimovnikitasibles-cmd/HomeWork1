@@ -527,5 +527,14 @@ console.log("Массив:", example15);
 console.log("Среднее арифметическое:", average.toFixed(2)); // Округлили до 2 знаков
 
 
+let myDate = new Date(); 
+console.log(+myDate)
 
 
+//HW#7 Встроенные объекты
+
+//№1
+const registr = 'js';
+console.log(registr.toUpperCase());
+
+//№2
