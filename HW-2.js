@@ -654,4 +654,25 @@ console.log(new Date());
 
 const currentDate = new Date();
 currentDate.setDate(currentDate.getDate() + 73);
-console.log(currentDate.toLocaleDateString());
+console.log(currentDate.toLocaleDateString('ru-RU'));
+
+//#10
+function formatDateTime(date) {
+
+    const day = date.getDate();
+    
+    const month = date.toLocaleDateString('ru-RU', { month: 'long' });
+
+    const year = date.getFullYear();
+    
+    const weekday = date.toLocaleDateString('ru-RU', { weekday: 'long' });
+    
+    const hours = String(date.getHours()).padStart(2, '0');
+    const minutes = String(date.getMinutes()).padStart(2, '0');
+    const seconds = String(date.getSeconds()).padStart(2, '0');
+
+    return `Дата: ${day} ${month} ${year} — это ${weekday}.\nВремя: ${hours}:${minutes}:${seconds}`;
+}
+
+const now = new Date();
+console.log(formatDateTime(now));
