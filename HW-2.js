@@ -618,3 +618,31 @@ console.log(Math.round(exampleCeilFloor));
 
 console.log(Math.max(52, 53, 49, 77, 21, 32 ))
 console.log(Math.min(52, 53, 49, 77, 21, 32 ))
+
+
+//№5
+function exampleRandomNumber() {
+
+    const randomNumber = Math.floor(Math.random() * 10) + 1;
+   console.log(randomNumber)
+  }
+exampleRandomNumber()
+   
+//#6
+function getRandomArray(num) {
+ const results = [];
+    const arrayLength = Math.floor(num / 2);
+    for (let i = 0; i < arrayLength; i++) {
+        const randomNum = Math.floor(Math.random() * (num + 1));
+        results.push(randomNum);
+    }
+    return results;}
+console.log(getRandomArray(10)); 
+console.log(getRandomArray(5));  
+
+//#7
+function getRandomInRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+console.log(getRandomInRange(5, 15));  
