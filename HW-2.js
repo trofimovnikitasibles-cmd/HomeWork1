@@ -646,3 +646,6 @@ function getRandomInRange(min, max) {
 }
 
 console.log(getRandomInRange(5, 15));  
+
+//#8
+console.log(new Date());
