@@ -649,3 +649,9 @@ console.log(getRandomInRange(5, 15));
 
 //#8
 console.log(new Date());
+
+//#9
+
+const currentDate = new Date();
+currentDate.setDate(currentDate.getDate() + 73);
+console.log(currentDate.toLocaleDateString());
