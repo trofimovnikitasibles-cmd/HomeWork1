@@ -361,180 +361,260 @@ console.log(circle2.getPerimeter());
 //HW#6 Массивы
 
 // Реализация игры №2
-function simpleArithmetic() {
-  const operators = ['+', '-', '*', '/'];
-  const a = Math.floor(Math.random() * 10) + 1;
-  const b = Math.floor(Math.random() * 10) + 1;
-  const op = operators[Math.floor(Math.random() * operators.length)];
+// function simpleArithmetic() {
+//   const operators = ['+', '-', '*', '/'];
+//   const a = Math.floor(Math.random() * 10) + 1;
+//   const b = Math.floor(Math.random() * 10) + 1;
+//   const op = operators[Math.floor(Math.random() * operators.length)];
 
-  let correctAnswer;
-  let task;
+//   let correctAnswer;
+//   let task;
 
-  if (op === '/') {
-    // Чтобы не было дробей, делим произведение на число
-    correctAnswer = a;
-    task = `${a * b} / ${b}`;
-  } else {
-    task = `${a} ${op} ${b}`;
-    // Используем eval для быстрого вычисления правильного ответа из строки
-    correctAnswer = eval(task);
-  }
+//   if (op === '/') {
+//     // Чтобы не было дробей, делим произведение на число
+//     correctAnswer = a;
+//     task = `${a * b} / ${b}`;
+//   } else {
+//     task = `${a} ${op} ${b}`;
+//     // Используем eval для быстрого вычисления правильного ответа из строки
+//     correctAnswer = eval(task);
+//   }
 
-  const userAnswer = prompt(`Решите задачу: ${task}`);
+//   const userAnswer = prompt(`Решите задачу: ${task}`);
 
-  if (userAnswer !== null) {
-    if (Number(userAnswer) === correctAnswer) {
-      alert("Верно!");
-    } else {
-      alert(`Неверно. Правильный ответ: ${correctAnswer}`);
-    }
-  }
-}
+//   if (userAnswer !== null) {
+//     if (Number(userAnswer) === correctAnswer) {
+//       alert("Верно!");
+//     } else {
+//       alert(`Неверно. Правильный ответ: ${correctAnswer}`);
+//     }
+//   }
+// }
 
-//№1
-const numbs = [1, 5, 4, 10, 0, 3];
+// //№1
+// const numbs = [1, 5, 4, 10, 0, 3];
 
-for (const num of numbs) {
-  console.log(num);
-  if (num === 10) {
-    break;
-  }
-}
+// for (const num of numbs) {
+//   console.log(num);
+//   if (num === 10) {
+//     break;
+//   }
+// }
 
-//№2
-console.log(numbs.indexOf(4));
+// //№2
+// console.log(numbs.indexOf(4));
 
-//№3
-const nmb = [1, 3, 5, 10, 20];
-const joinExample = nmb.join(' ');
+// //№3
+// const nmb = [1, 3, 5, 10, 20];
+// const joinExample = nmb.join(' ');
 
-console.log(joinExample);
+// console.log(joinExample);
 
-//№4
-const matrix = Array(3).fill().map(() => Array(3).fill(1));
+// //№4
+// const matrix = Array(3).fill().map(() => Array(3).fill(1));
 
-console.log(matrix); 
+// console.log(matrix); 
 
 
-//№5
-let pushing = [1,1,1];
-pushing.push(2,2,2)
+// //№5
+// let pushing = [1,1,1];
+// pushing.push(2,2,2)
 
-console.log(pushing);
+// console.log(pushing);
 
-//№6
-let del = [9, 8, 7, 'a', 6, 5];
-delSort = del.sort();
-console.log(delSort);
+// //№6
+// let del = [9, 8, 7, 'a', 6, 5];
+// delSort = del.sort();
+// console.log(delSort);
 
-delPop = delSort.pop();
-console.log(delSort);
-console.log(delPop);
+// delPop = delSort.pop();
+// console.log(delSort);
+// console.log(delPop);
 
-//№7
-let search = [9, 8, 7, 6, 5];
-let userInput = prompt('Угадай число');
-let userAnswer = Number(userInput);
+// //№7
+// let search = [9, 8, 7, 6, 5];
+// let userInput = prompt('Угадай число');
+// let userAnswer = Number(userInput);
 
-if(search.includes(userAnswer)){
+// if(search.includes(userAnswer)){
     
-  alert("Угадал");
-} 
-else {
-  alert("Не угадал");
-}
+//   alert("Угадал");
+// } 
+// else {
+//   alert("Не угадал");
+// }
 
-//№8
-const str = 'abcdef';
-const reversed = str.split('').reverse().join('');
+// //№8
+// const str = 'abcdef';
+// const reversed = str.split('').reverse().join('');
 
-console.log(reversed); 
+// console.log(reversed); 
 
-//№9
-let double = [[1, 2, 3],[4, 5, 6]];
-slice = [...double[0],...double[1]];
-console.log(slice);
+// //№9
+// let double = [[1, 2, 3],[4, 5, 6]];
+// slice = [...double[0],...double[1]];
+// console.log(slice);
 
-//№10
-const splitExample = [2, 5, 8, 1, 9, 3, 7];
-for (let i = 0; i < splitExample.length - 1; i++) {
-  let sum = splitExample[i] + splitExample[i + 1];
-  console.log(`Сумма ${splitExample[i]} и ${splitExample[i + 1]} равна: ${sum}`);
-}
+// //№10
+// const splitExample = [2, 5, 8, 1, 9, 3, 7];
+// for (let i = 0; i < splitExample.length - 1; i++) {
+//   let sum = splitExample[i] + splitExample[i + 1];
+//   console.log(`Сумма ${splitExample[i]} и ${splitExample[i + 1]} равна: ${sum}`);
+// }
 
-//№11
-function getSquares(arr) {
+// //№11
+// function getSquares(arr) {
 
-  return arr.map(num => num ** 2);
-}
+//   return arr.map(num => num ** 2);
+// }
 
-const input = [1, 2, 3, 4, 5];
-console.log(getSquares(input)); 
+// const input = [1, 2, 3, 4, 5];
+// console.log(getSquares(input)); 
 
-//№12
-function getWordLengths(arr) {
+// //№12
+// function getWordLengths(arr) {
   
-  return arr.map(word => word.length);
-}
+//   return arr.map(word => word.length);
+// }
 
-const words = ["яблоко", "банан", "киви"];
-const lengths = getWordLengths(words);
+// const words = ["яблоко", "банан", "киви"];
+// const lengths = getWordLengths(words);
 
-console.log(lengths); 
+// console.log(lengths); 
 
-//№13
-function getNegativeNumbers(arr) {
-  return arr.filter(num => num < 0);
-}
+// //№13
+// function getNegativeNumbers(arr) {
+//   return arr.filter(num => num < 0);
+// }
 
-const example13 = [10, -5, 3, -2, 0, -11, 8];
-const negatives = getNegativeNumbers(example13);
+// const example13 = [10, -5, 3, -2, 0, -11, 8];
+// const negatives = getNegativeNumbers(example13);
 
-console.log(negatives); 
+// console.log(negatives); 
 
-//№14
-// 1. Создаем исходный массив из 10 случайных чисел
-const originalArray = [];
-for (let i = 0; i < 10; i++) {
-  // Генерируем число от 0 до 10 и округляем (например, до целого)
-  const randomNumber = Math.floor(Math.random() * 11);
-  originalArray.push(randomNumber);
-}
+// //№14
+// // 1. Создаем исходный массив из 10 случайных чисел
+// const originalArray = [];
+// for (let i = 0; i < 10; i++) {
+//   // Генерируем число от 0 до 10 и округляем (например, до целого)
+//   const randomNumber = Math.floor(Math.random() * 11);
+//   originalArray.push(randomNumber);
+// }
 
-// 2. С помощью filter() выбираем только четные значения
-const evenArray = originalArray.filter(num => num % 2 === 0);
+// // 2. С помощью filter() выбираем только четные значения
+// const evenArray = originalArray.filter(num => num % 2 === 0);
 
-// 3. Выводим результаты в консоль
-console.log("Исходный массив:", originalArray);
-console.log("Массив с четными значениями:", evenArray);
+// // 3. Выводим результаты в консоль
+// console.log("Исходный массив:", originalArray);
+// console.log("Массив с четными значениями:", evenArray);
 
-//№15
-// 1. Генерируем массив из 6 случайных чисел от 1 до 10
-const example15 = [];
-for (let i = 0; i < 6; i++) {
-  const randomNumber = Math.floor(Math.random() * 10) + 1;
-  example15.push(randomNumber);
-}
+// //№15
+// // 1. Генерируем массив из 6 случайных чисел от 1 до 10
+// const example15 = [];
+// for (let i = 0; i < 6; i++) {
+//   const randomNumber = Math.floor(Math.random() * 10) + 1;
+//   example15.push(randomNumber);
+// }
 
-// 2. Вычисляем сумму всех элементов через reduce()
-const sum = example15.reduce((accumulator, current) => accumulator + current, 0);
+// // 2. Вычисляем сумму всех элементов через reduce()
+// const sum = example15.reduce((accumulator, current) => accumulator + current, 0);
 
-// 3. Находим среднее арифметическое
-const average = sum / example15.length;
+// // 3. Находим среднее арифметическое
+// const average = sum / example15.length;
 
-// Вывод результатов
-console.log("Массив:", example15);
-console.log("Среднее арифметическое:", average.toFixed(2)); // Округлили до 2 знаков
+// // Вывод результатов
+// console.log("Массив:", example15);
+// console.log("Среднее арифметическое:", average.toFixed(2)); // Округлили до 2 знаков
 
 
-let myDate = new Date(); 
-console.log(+myDate)
+// let myDate = new Date(); 
+// console.log(+myDate)
 
 
 //HW#7 Встроенные объекты
+// реализация третьей игры
+function reverseText(){
+  const userWord = prompt('Введите слово')
+  if(userWord){
+    const reverseWord = userWord.split('').reverse().join('')
+    alert(reverseWord)
+  }
+}
+
+// реализация пятой игры
+// Массив вопросов и правильных ответов
+
+function questionAnswer () {
+  const quiz = [
+    {
+        question: "Какой цвет небо?",
+        options: ["1. Красный", "2. Синий", "3. Зеленый"],
+        correctAnswer: 2 // номер правильного ответа
+    },
+    {
+        question: "Сколько дней в неделе?",
+        options: ["1. Шесть", "2. Семь", "3. Восемь"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько у человека пальцев на одной руке?",
+        options: ["1. Четыре", "2. Пять", "3. Шесть"],
+        correctAnswer: 2
+    }
+];
+
+// Переменная для подсчета правильных ответов
+let correctCount = 0;
+
+// Цикл для прохода по каждому вопросу викторины
+quiz.forEach((item) => {
+    // Формируем текст сообщения: вопрос + варианты ответов с новой строки
+    const message = item.question + "\n" + item.options.join("\n") + "\n\nВведите номер ответа (1, 2 или 3):";
+    
+    // Запрашиваем ответ у пользователя и преобразуем его в число
+    const userAnswer = Number(prompt(message));
+    
+    // Сравниваем ответ пользователя с правильным ответом
+    if (userAnswer === item.correctAnswer) {
+        correctCount++; // Увеличиваем счетчик, если ответ верный
+    }
+});
+
+// Выводим финальный результат игры
+alert(`Игра окончена!\nВы правильно ответили на ${correctCount} из ${quiz.length} вопросов.`);
+}
+
+
+
 
 //№1
 const registr = 'js';
 console.log(registr.toUpperCase());
 
 //№2
+function filterArrayByPrefix(array, searchString) {
+  const searchLower = searchString.toLowerCase();
+
+  return array.filter(item => {
+   
+    return item.toLowerCase().startsWith(searchLower);
+  });
+}
+
+const sourceArray = ['Аптека', 'Арбуз', 'Апельсин', 'Хлеб', 'Клей'];
+const prefix = 'ап';
+
+const result = filterArrayByPrefix(sourceArray, prefix);
+console.log(result); 
+
+//№3
+
+const exampleCeilFloor = 32.58884;
+console.log(Math.ceil(exampleCeilFloor));
+console.log(Math.floor(exampleCeilFloor));
+console.log(Math.round(exampleCeilFloor));
+
+//№4
+
+console.log(Math.max(52, 53, 49, 77, 21, 32 ))
+console.log(Math.min(52, 53, 49, 77, 21, 32 ))
