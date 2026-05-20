@@ -639,3 +639,10 @@ function getRandomArray(num) {
     return results;}
 console.log(getRandomArray(10)); 
 console.log(getRandomArray(5));  
+
+//#7
+function getRandomInRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+console.log(getRandomInRange(5, 15));  
