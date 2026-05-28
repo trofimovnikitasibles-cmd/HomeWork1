@@ -533,125 +533,180 @@ console.log(circle2.getPerimeter());
 
 //HW#7 Встроенные объекты
 // реализация третьей игры
-function reverseText(){
-  const userWord = prompt('Введите слово')
-  if(userWord){
-    const reverseWord = userWord.split('').reverse().join('')
-    alert(reverseWord)
+// function reverseText(){
+//   const userWord = prompt('Введите слово')
+//   if(userWord){
+//     const reverseWord = userWord.split('').reverse().join('')
+//     alert(reverseWord)
+//   }
+// }
+
+// // реализация пятой игры
+// // Массив вопросов и правильных ответов
+
+// function questionAnswer () {
+//   const quiz = [
+//     {
+//         question: "Какой цвет небо?",
+//         options: ["1. Красный", "2. Синий", "3. Зеленый"],
+//         correctAnswer: 2 // номер правильного ответа
+//     },
+//     {
+//         question: "Сколько дней в неделе?",
+//         options: ["1. Шесть", "2. Семь", "3. Восемь"],
+//         correctAnswer: 2
+//     },
+//     {
+//         question: "Сколько у человека пальцев на одной руке?",
+//         options: ["1. Четыре", "2. Пять", "3. Шесть"],
+//         correctAnswer: 2
+//     }
+// ];
+
+// // Переменная для подсчета правильных ответов
+// let correctCount = 0;
+
+// // Цикл для прохода по каждому вопросу викторины
+// quiz.forEach((item) => {
+//     // Формируем текст сообщения: вопрос + варианты ответов с новой строки
+//     const message = item.question + "\n" + item.options.join("\n") + "\n\nВведите номер ответа (1, 2 или 3):";
+    
+//     // Запрашиваем ответ у пользователя и преобразуем его в число
+//     const userAnswer = Number(prompt(message));
+    
+//     // Сравниваем ответ пользователя с правильным ответом
+//     if (userAnswer === item.correctAnswer) {
+//         correctCount++; // Увеличиваем счетчик, если ответ верный
+//     }
+// });
+
+// // Выводим финальный результат игры
+// alert(`Игра окончена!\nВы правильно ответили на ${correctCount} из ${quiz.length} вопросов.`);
+// }
+
+
+
+
+// //№1
+// const registr = 'js';
+// console.log(registr.toUpperCase());
+
+// //№2
+// function filterArrayByPrefix(array, searchString) {
+//   const searchLower = searchString.toLowerCase();
+
+//   return array.filter(item => {
+   
+//     return item.toLowerCase().startsWith(searchLower);
+//   });
+// }
+
+// const sourceArray = ['Аптека', 'Арбуз', 'Апельсин', 'Хлеб', 'Клей'];
+// const prefix = 'ап';
+
+// const result = filterArrayByPrefix(sourceArray, prefix);
+// console.log(result); 
+
+// //№3
+
+// const exampleCeilFloor = 32.58884;
+// console.log(Math.ceil(exampleCeilFloor));
+// console.log(Math.floor(exampleCeilFloor));
+// console.log(Math.round(exampleCeilFloor));
+
+// //№4
+
+// console.log(Math.max(52, 53, 49, 77, 21, 32 ))
+// console.log(Math.min(52, 53, 49, 77, 21, 32 ))
+
+
+// //№5
+// function exampleRandomNumber() {
+
+//     const randomNumber = Math.floor(Math.random() * 10) + 1;
+//    console.log(randomNumber)
+//   }
+// exampleRandomNumber()
+   
+// //#6
+// function getRandomArray(num) {
+//  const results = [];
+//     const arrayLength = Math.floor(num / 2);
+//     for (let i = 0; i < arrayLength; i++) {
+//         const randomNum = Math.floor(Math.random() * (num + 1));
+//         results.push(randomNum);
+//     }
+//     return results;}
+// console.log(getRandomArray(10)); 
+// console.log(getRandomArray(5));  
+
+// //#7
+// function getRandomInRange(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// console.log(getRandomInRange(5, 15));  
+
+// //#8
+// console.log(new Date());
+
+// //#9
+
+// const currentDate = new Date();
+// currentDate.setDate(currentDate.getDate() + 73);
+// console.log(currentDate.toLocaleDateString('ru-RU'));
+
+// //#10
+// function formatDateTime(date) {
+
+//     const day = date.getDate();
+    
+//     const month = date.toLocaleDateString('ru-RU', { month: 'long' });
+
+//     const year = date.getFullYear();
+    
+//     const weekday = date.toLocaleDateString('ru-RU', { weekday: 'long' });
+    
+//     const hours = String(date.getHours()).padStart(2, '0');
+//     const minutes = String(date.getMinutes()).padStart(2, '0');
+//     const seconds = String(date.getSeconds()).padStart(2, '0');
+
+//     return `Дата: ${day} ${month} ${year} — это ${weekday}.\nВремя: ${hours}:${minutes}:${seconds}`;
+// }
+
+// const now = new Date();
+// console.log(formatDateTime(now));
+
+
+// HW#8 Callback, setTimeout, setInterval
+
+// реализация игры №4
+
+function kniveScissorsPapper(){
+  const Games5Massive = ["камень", "ножницы", "бумага"]
+  let randomIndex = Math.floor(Math.random()*3) ;
+  let compChoice =Games5Massive[randomIndex]
+  let userChoice =  prompt('Камень, ножницы, бумага. Раз, два, три!').toLowerCase();
+if (compChoice === userChoice){
+  alert('Ничья!');}
+  else if((userChoice === "камень" && compChoice === "ножницы") || (userChoice === "ножницы" && compChoice === "бумага") || (userChoice === "бумага" && compChoice === "камень")){
+    alert('Победа')
+  } 
+  else{
+    alert('Поражение')
   }
 }
 
-// реализация пятой игры
-// Массив вопросов и правильных ответов
-
-function questionAnswer () {
-  const quiz = [
-    {
-        question: "Какой цвет небо?",
-        options: ["1. Красный", "2. Синий", "3. Зеленый"],
-        correctAnswer: 2 // номер правильного ответа
-    },
-    {
-        question: "Сколько дней в неделе?",
-        options: ["1. Шесть", "2. Семь", "3. Восемь"],
-        correctAnswer: 2
-    },
-    {
-        question: "Сколько у человека пальцев на одной руке?",
-        options: ["1. Четыре", "2. Пять", "3. Шесть"],
-        correctAnswer: 2
-    }
+// #1
+const people = [
+   { name: 'Глеб', age: 29 },
+   { name: 'Анна', age: 17 },
+   { name: 'Олег', age: 7 },
+   { name: 'Оксана', age: 47 }
 ];
 
-// Переменная для подсчета правильных ответов
-let correctCount = 0;
 
-// Цикл для прохода по каждому вопросу викторины
-quiz.forEach((item) => {
-    // Формируем текст сообщения: вопрос + варианты ответов с новой строки
-    const message = item.question + "\n" + item.options.join("\n") + "\n\nВведите номер ответа (1, 2 или 3):";
-    
-    // Запрашиваем ответ у пользователя и преобразуем его в число
-    const userAnswer = Number(prompt(message));
-    
-    // Сравниваем ответ пользователя с правильным ответом
-    if (userAnswer === item.correctAnswer) {
-        correctCount++; // Увеличиваем счетчик, если ответ верный
-    }
-});
-
-// Выводим финальный результат игры
-alert(`Игра окончена!\nВы правильно ответили на ${correctCount} из ${quiz.length} вопросов.`);
-}
+console.log(people.sort((a,b) => a.age - b.age));
 
 
 
-
-//№1
-const registr = 'js';
-console.log(registr.toUpperCase());
-
-//№2
-function filterArrayByPrefix(array, searchString) {
-  const searchLower = searchString.toLowerCase();
-
-  return array.filter(item => {
-   
-    return item.toLowerCase().startsWith(searchLower);
-  });
-}
-
-const sourceArray = ['Аптека', 'Арбуз', 'Апельсин', 'Хлеб', 'Клей'];
-const prefix = 'ап';
-
-const result = filterArrayByPrefix(sourceArray, prefix);
-console.log(result); 
-
-//№3
-
-const exampleCeilFloor = 32.58884;
-console.log(Math.ceil(exampleCeilFloor));
-console.log(Math.floor(exampleCeilFloor));
-console.log(Math.round(exampleCeilFloor));
-
-//№4
-
-console.log(Math.max(52, 53, 49, 77, 21, 32 ))
-console.log(Math.min(52, 53, 49, 77, 21, 32 ))
-
-
-//№5
-function exampleRandomNumber() {
-
-    const randomNumber = Math.floor(Math.random() * 10) + 1;
-   console.log(randomNumber)
-  }
-exampleRandomNumber()
-   
-//#6
-function getRandomArray(num) {
- const results = [];
-    const arrayLength = Math.floor(num / 2);
-    for (let i = 0; i < arrayLength; i++) {
-        const randomNum = Math.floor(Math.random() * (num + 1));
-        results.push(randomNum);
-    }
-    return results;}
-console.log(getRandomArray(10)); 
-console.log(getRandomArray(5));  
-
-//#7
-function getRandomInRange(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-console.log(getRandomInRange(5, 15));  
-
-//#8
-console.log(new Date());
-
-//#9
-
-const currentDate = new Date();
-currentDate.setDate(currentDate.getDate() + 73);
-console.log(currentDate.toLocaleDateString());
