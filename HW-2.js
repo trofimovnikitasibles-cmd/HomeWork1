@@ -704,9 +704,47 @@ const people = [
    { name: 'Олег', age: 7 },
    { name: 'Оксана', age: 47 }
 ];
-
-
 console.log(people.sort((a,b) => a.age - b.age));
 
+
+// #2
+
+function isPositive(number) {
+  return number > 0;
+}
+function isMale(person) {
+  return person.gender === 'male';
+}
+function filter(arr, functionRule) {
+  let newMassive = [];
+  for (let i = 0; i < arr.length; i++) {
+    let item = arr[i];
+    if (functionRule(item)) {
+      newMassive.push(item);
+    }
+  }
+  return newMassive;
+}
+
+console.log(filter([3, -4, 1, 9], isPositive));
+
+const people2 = [
+   {name: 'Глеб', gender: 'male'},
+   {name: 'Анна', gender: 'female'},
+   {name: 'Олег', gender: 'male'},
+   {name: 'Оксана', gender: 'female'}
+];
+console.log(filter(people2, isMale)); 
+
+// #3
+
+let intervalId = setInterval(() => {
+  console.log(new Date());
+}, 3000);
+
+setTimeout(() => {
+  clearInterval(intervalId); 
+  console.log('30 секунд прошло');
+}, 30000);
 
 
