@@ -736,4 +736,15 @@ const people2 = [
 ];
 console.log(filter(people2, isMale)); 
 
+// #3
+
+let intervalId = setInterval(() => {
+  console.log(new Date());
+}, 3000);
+
+setTimeout(() => {
+  clearInterval(intervalId); 
+  console.log('30 секунд прошло');
+}, 30000);
+
 
