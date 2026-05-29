@@ -682,69 +682,115 @@ console.log(circle2.getPerimeter());
 
 // реализация игры №4
 
-function kniveScissorsPapper(){
-  const Games5Massive = ["камень", "ножницы", "бумага"]
-  let randomIndex = Math.floor(Math.random()*3) ;
-  let compChoice =Games5Massive[randomIndex]
-  let userChoice =  prompt('Камень, ножницы, бумага. Раз, два, три!').toLowerCase();
-if (compChoice === userChoice){
-  alert('Ничья!');}
-  else if((userChoice === "камень" && compChoice === "ножницы") || (userChoice === "ножницы" && compChoice === "бумага") || (userChoice === "бумага" && compChoice === "камень")){
-    alert('Победа')
-  } 
-  else{
-    alert('Поражение')
-  }
+// function kniveScissorsPapper(){
+//   const Games5Massive = ["камень", "ножницы", "бумага"]
+//   let randomIndex = Math.floor(Math.random()*3) ;
+//   let compChoice =Games5Massive[randomIndex]
+//   let userChoice =  prompt('Камень, ножницы, бумага. Раз, два, три!').toLowerCase();
+// if (compChoice === userChoice){
+//   alert('Ничья!');}
+//   else if((userChoice === "камень" && compChoice === "ножницы") || (userChoice === "ножницы" && compChoice === "бумага") || (userChoice === "бумага" && compChoice === "камень")){
+//     alert('Победа!')
+//   } 
+//   else if((userChoice === "ножницы" && compChoice === "камень") || (userChoice === "бумага" && compChoice === "ножницы") || (userChoice === "камень" && compChoice === "бумага")){
+//     alert('Поражение!')
+//   }
+//   else{
+//     alert('Вы ввели что-то не то!')
+//   }
+// }
+
+// // #1
+// const people = [
+//    { name: 'Глеб', age: 29 },
+//    { name: 'Анна', age: 17 },
+//    { name: 'Олег', age: 7 },
+//    { name: 'Оксана', age: 47 }
+// ];
+// console.log(people.sort((a,b) => a.age - b.age));
+
+
+// // #2
+
+// function isPositive(number) {
+//   return number > 0;
+// }
+// function isMale(person) {
+//   return person.gender === 'male';
+// }
+// function filter(arr, functionRule) {
+//   let newMassive = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     let item = arr[i];
+//     if (functionRule(item)) {
+//       newMassive.push(item);
+//     }
+//   }
+//   return newMassive;
+// }
+
+// console.log(filter([3, -4, 1, 9], isPositive));
+
+// const people2 = [
+//    {name: 'Глеб', gender: 'male'},
+//    {name: 'Анна', gender: 'female'},
+//    {name: 'Олег', gender: 'male'},
+//    {name: 'Оксана', gender: 'female'}
+// ];
+// console.log(filter(people2, isMale)); 
+
+// // #3
+
+// let intervalId = setInterval(() => {
+//   console.log(new Date());
+// }, 3000);
+
+// setTimeout(() => {
+//   clearInterval(intervalId); 
+//   console.log('30 секунд прошло');
+// }, 30000);
+
+// // #4
+
+// function delayForSecond(callback) {
+//    setTimeout(callback, 1000);
+// }
+
+// delayForSecond(function () {
+//    console.log('Привет, Глеб!');
+// });
+
+// // #5
+
+// // Функция delayForSecond через 1 секунду пишет в консоль 
+// // «Прошла одна секунда», а затем вызывает переданный колбэк
+// function delayForSecond(cb) {
+//     setTimeout(() => {
+//         console.log('Прошла одна секунда');
+//         if(cb) {  cb(); }
+//     }, 1000)
+// }
+
+// Функция delayForSecond через 1 секунду пишет в консоль 
+// «Прошла одна секунда», а затем вызывает переданный колбэк
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if(cb) {  cb(); }
+    }, 1000)
 }
 
-// #1
-const people = [
-   { name: 'Глеб', age: 29 },
-   { name: 'Анна', age: 17 },
-   { name: 'Олег', age: 7 },
-   { name: 'Оксана', age: 47 }
-];
-console.log(people.sort((a,b) => a.age - b.age));
-
-
-// #2
-
-function isPositive(number) {
-  return number > 0;
-}
-function isMale(person) {
-  return person.gender === 'male';
-}
-function filter(arr, functionRule) {
-  let newMassive = [];
-  for (let i = 0; i < arr.length; i++) {
-    let item = arr[i];
-    if (functionRule(item)) {
-      newMassive.push(item);
-    }
-  }
-  return newMassive;
+// Функция sayHi выводит в консоль приветствие для указанного имени
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
 }
 
-console.log(filter([3, -4, 1, 9], isPositive));
+// Код выше менять нельзя
 
-const people2 = [
-   {name: 'Глеб', gender: 'male'},
-   {name: 'Анна', gender: 'female'},
-   {name: 'Олег', gender: 'male'},
-   {name: 'Оксана', gender: 'female'}
-];
-console.log(filter(people2, isMale)); 
+// Нужно изменить код ниже:
+delayForSecond(() => sayHi('Глеб'));
 
-// #3
 
-let intervalId = setInterval(() => {
-  console.log(new Date());
-}, 3000);
-
-setTimeout(() => {
-  clearInterval(intervalId); 
-  console.log('30 секунд прошло');
-}, 30000);
+// HW#9 Основы работы DOM
 
 
