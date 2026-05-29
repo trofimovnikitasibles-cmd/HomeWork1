@@ -788,7 +788,11 @@ function sayHi (name) {
 // Код выше менять нельзя
 
 // Нужно изменить код ниже:
-delayForSecond(() => sayHi('Глеб'));
+delayForSecond(() => {
+   setTimeout(() => {
+        sayHi('Глеб');
+    }, 1000); 
+});
 
 
 // HW#9 Основы работы DOM
