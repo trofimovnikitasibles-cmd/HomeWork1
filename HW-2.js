@@ -690,10 +690,13 @@ function kniveScissorsPapper(){
 if (compChoice === userChoice){
   alert('Ничья!');}
   else if((userChoice === "камень" && compChoice === "ножницы") || (userChoice === "ножницы" && compChoice === "бумага") || (userChoice === "бумага" && compChoice === "камень")){
-    alert('Победа')
+    alert('Победа!')
   } 
+  else if((userChoice === "ножницы" && compChoice === "камень") || (userChoice === "бумага" && compChoice === "ножницы") || (userChoice === "камень" && compChoice === "бумага")){
+    alert('Поражение!')
+  }
   else{
-    alert('Поражение')
+    alert('Вы ввели что-то не то!')
   }
 }
 
@@ -770,7 +773,7 @@ function delayForSecond(cb) {
 
 // Функция sayHi выводит в консоль приветствие для указанного имени
 function sayHi (name) {
-    console.log('Привет, ${name}!');
+    console.log(`Привет, ${name}!`);
 }
 
 // Код выше менять нельзя
