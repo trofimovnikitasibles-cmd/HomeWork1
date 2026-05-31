@@ -773,28 +773,41 @@ console.log(circle2.getPerimeter());
 
 // Функция delayForSecond через 1 секунду пишет в консоль 
 // «Прошла одна секунда», а затем вызывает переданный колбэк
-function delayForSecond(cb) {
-    setTimeout(() => {
-        console.log('Прошла одна секунда');
-        if(cb) {  cb(); }
-    }, 1000)
-}
+// function delayForSecond(cb) {
+//     setTimeout(() => {
+//         console.log('Прошла одна секунда');
+//         if(cb) {  cb(); }
+//     }, 1000)
+// }
 
-// Функция sayHi выводит в консоль приветствие для указанного имени
-function sayHi (name) {
-    console.log(`Привет, ${name}!`);
-}
+// // Функция sayHi выводит в консоль приветствие для указанного имени
+// function sayHi (name) {
+//     console.log(`Привет, ${name}!`);
+// }
 
-// Код выше менять нельзя
+// // Код выше менять нельзя
 
-// Нужно изменить код ниже:
-delayForSecond(() => {
-   setTimeout(() => {
-        sayHi('Глеб');
-    }, 1000); 
-});
+// // Нужно изменить код ниже:
+// delayForSecond(() => {
+//    setTimeout(() => {
+//         sayHi('Глеб');
+//     }, 1000); 
+// });
 
 
 // HW#9 Основы работы DOM
 
+// №1
+const headingEl = document.querySelector('.main-h1');
+const hideButtonEl = document.querySelector('.hideText');
 
+hideButtonEl.addEventListener('click', function() {
+    if (headingEl.style.display === 'none') {
+        headingEl.style.display = 'block';     
+        hideButtonEl.textContent = 'Скрыть текст'; 
+    } else {
+        
+        headingEl.style.display = 'none';
+        hideButtonEl.textContent = 'Показать текст';
+    }
+});
