@@ -31,27 +31,26 @@
             <div class="main-title">
       <h1 class="main-h1">Добро пожаловать на мой сайт мини-игр</h1>
             <h2 class="main-h2">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <span class="bold">«Поехали!»</span>  и <span class="bold">приступай.</span> </h2>
-            <button class="main-btn">Поехали!</button>
-            <button class ="hideText">Скрыть текст</button>
+            <a href="#aboutBtn"> <button  class="main-btn">Поехали!</button></a>
             </div>
             
       </header>
       <!-- закрыть section здесь-->
             </section>
-            <section> 
-      <div class="main-animated center">
+          
+     <section> 
+      <div class="main-animated">
       <div class="main-runtext">
-      <span class="main-runtext-style"> Викторина Угадай число Переверни текст Простая Арифметика  Камень, ножницы, бумага Генератор случайных цветов</span>
+      <span class="main-runtext-style"> Викторина <img src="img/strokaStar.png" alt=""> Угадай число <img src="img/strokaStar.png" alt=""> Переверни текст <img src="img/strokaStar.png" alt=""> Простая Арифметика <img src="img/strokaStar.png" alt=""> Камень, ножницы, бумага <img src="img/strokaStar.png" alt=""> Генератор случайных цветов</span>
       </div>
             </div>
             </section>
-
       <section class="about-games center"> 
             <div class="about-games-svg-Big"><img src="img/StarBig.svg" alt=""></div>
             <div class="about-games-svg-Small-1"><img src="img/StarSmall.svg" alt=""></div>
             <div class="about-games-svg-Small-2"><img src="img/StarSmall2.svg" alt=""></div>
             <div class="about-games-title">
-      <h2 class="about-games-title-h2">Об играх</h2>
+      <h2 id="aboutBtn" class="about-games-title-h2">Об играх</h2>
             <h3 class="about-games-title-h3">В моей коллекции представлено 6 игр на разные темы.Игры несложные — в них может поиграть каждый.
       Все игры доступны для пользования.</h3>
             </div>
@@ -169,7 +168,7 @@
       <div id="MG6" class="mini-games__item"><img class="mini-games__item-pic" src="img/Игра№6.png" alt=""></div>
       <div class="mini-games-name-right"><h2 class="mini-games-name">Генератор случайных цветов</h2>
             <h2 class="mini-games-discription">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</h2>
-            <button class="mini-games-btn">Играть!</button>
+            <button onclick="backgroundChange()" class="mini-games-btn">Играть!</button>
             </div>
       </div><!--Игра номер 6-->
 
@@ -181,10 +180,7 @@
       <h2 class="ftr-title">Все права защищены</h2>
             </section>
       </footer><!--Подвал-->
-      <script src="HW-2.js">;
-            const hideTextEl = HomeWork1.querySelector('.hideText');
-            hideTextEl.addEventListener('click', listener, options)
-      </script>
-      </body>
+            <script src="HW-2.js"></script>
+            </body>
 
-      </html> 
+      </html>  

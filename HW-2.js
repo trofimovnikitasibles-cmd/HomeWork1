@@ -191,36 +191,6 @@ console.log(iterations)
 
 //HW#5 функции
 
-function guessTheNumber() {
-  
-  const secretNumber = Math.floor(Math.random() * 100) + 1;
-  let userGuess = null;
-
-
-  while (userGuess !== secretNumber) {
-    userGuess = prompt("Угадай число от 1 до 100:");
-
-    
-    if (userGuess === null) break;
-
-    userGuess = Number(userGuess);
-
-   
-    if (userGuess > secretNumber) {
-      alert("Загаданное число меньше!");
-    } else if (userGuess < secretNumber) {
-      alert("Загаданное число больше!");
-    }
-  }
-
- 
-  if (userGuess === secretNumber) {
-    alert("Поздравляем! Вы угадали число " + secretNumber);
-  }
-}
-
-
-
 
 //№1
 const exercise1 = (a,b) =>{
@@ -357,39 +327,66 @@ console.log(circle1.getPerimeter());
 console.log(circle2.getArea());
 console.log(circle2.getPerimeter());
 */
+function guessTheNumber() {
+  
+  const secretNumber = Math.floor(Math.random() * 100) + 1;
+  let userGuess = null;
+
+
+  while (userGuess !== secretNumber) {
+    userGuess = prompt("Угадай число от 1 до 100:");
+
+    
+    if (userGuess === null) break;
+
+    userGuess = Number(userGuess);
+
+   
+    if (userGuess > secretNumber) {
+      alert("Загаданное число меньше!");
+    } else if (userGuess < secretNumber) {
+      alert("Загаданное число больше!");
+    }
+  }
+
+ 
+  if (userGuess === secretNumber) {
+    alert("Поздравляем! Вы угадали число " + secretNumber);
+  }
+}
 
 //HW#6 Массивы
 
 // Реализация игры №2
-// function simpleArithmetic() {
-//   const operators = ['+', '-', '*', '/'];
-//   const a = Math.floor(Math.random() * 10) + 1;
-//   const b = Math.floor(Math.random() * 10) + 1;
-//   const op = operators[Math.floor(Math.random() * operators.length)];
+function simpleArithmetic() {
+  const operators = ['+', '-', '*', '/'];
+  const a = Math.floor(Math.random() * 10) + 1;
+  const b = Math.floor(Math.random() * 10) + 1;
+  const op = operators[Math.floor(Math.random() * operators.length)];
 
-//   let correctAnswer;
-//   let task;
+  let correctAnswer;
+  let task;
 
-//   if (op === '/') {
-//     // Чтобы не было дробей, делим произведение на число
-//     correctAnswer = a;
-//     task = `${a * b} / ${b}`;
-//   } else {
-//     task = `${a} ${op} ${b}`;
-//     // Используем eval для быстрого вычисления правильного ответа из строки
-//     correctAnswer = eval(task);
-//   }
+  if (op === '/') {
+    // Чтобы не было дробей, делим произведение на число
+    correctAnswer = a;
+    task = `${a * b} / ${b}`;
+  } else {
+    task = `${a} ${op} ${b}`;
+    // Используем eval для быстрого вычисления правильного ответа из строки
+    correctAnswer = eval(task);
+  }
 
-//   const userAnswer = prompt(`Решите задачу: ${task}`);
+  const userAnswer = prompt(`Решите задачу: ${task}`);
 
-//   if (userAnswer !== null) {
-//     if (Number(userAnswer) === correctAnswer) {
-//       alert("Верно!");
-//     } else {
-//       alert(`Неверно. Правильный ответ: ${correctAnswer}`);
-//     }
-//   }
-// }
+  if (userAnswer !== null) {
+    if (Number(userAnswer) === correctAnswer) {
+      alert("Верно!");
+    } else {
+      alert(`Неверно. Правильный ответ: ${correctAnswer}`);
+    }
+  }
+}
 
 // //№1
 // const numbs = [1, 5, 4, 10, 0, 3];
@@ -533,56 +530,56 @@ console.log(circle2.getPerimeter());
 
 //HW#7 Встроенные объекты
 // реализация третьей игры
-// function reverseText(){
-//   const userWord = prompt('Введите слово')
-//   if(userWord){
-//     const reverseWord = userWord.split('').reverse().join('')
-//     alert(reverseWord)
-//   }
-// }
+function reverseText(){
+  const userWord = prompt('Введите слово')
+  if(userWord){
+    const reverseWord = userWord.split('').reverse().join('')
+    alert(reverseWord)
+  }
+}
 
 // // реализация пятой игры
 // // Массив вопросов и правильных ответов
 
-// function questionAnswer () {
-//   const quiz = [
-//     {
-//         question: "Какой цвет небо?",
-//         options: ["1. Красный", "2. Синий", "3. Зеленый"],
-//         correctAnswer: 2 // номер правильного ответа
-//     },
-//     {
-//         question: "Сколько дней в неделе?",
-//         options: ["1. Шесть", "2. Семь", "3. Восемь"],
-//         correctAnswer: 2
-//     },
-//     {
-//         question: "Сколько у человека пальцев на одной руке?",
-//         options: ["1. Четыре", "2. Пять", "3. Шесть"],
-//         correctAnswer: 2
-//     }
-// ];
+function questionAnswer () {
+  const quiz = [
+    {
+        question: "Какой цвет небо?",
+        options: ["1. Красный", "2. Синий", "3. Зеленый"],
+        correctAnswer: 2 // номер правильного ответа
+    },
+    {
+        question: "Сколько дней в неделе?",
+        options: ["1. Шесть", "2. Семь", "3. Восемь"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько у человека пальцев на одной руке?",
+        options: ["1. Четыре", "2. Пять", "3. Шесть"],
+        correctAnswer: 2
+    }
+];
 
-// // Переменная для подсчета правильных ответов
-// let correctCount = 0;
+// Переменная для подсчета правильных ответов
+let correctCount = 0;
 
-// // Цикл для прохода по каждому вопросу викторины
-// quiz.forEach((item) => {
-//     // Формируем текст сообщения: вопрос + варианты ответов с новой строки
-//     const message = item.question + "\n" + item.options.join("\n") + "\n\nВведите номер ответа (1, 2 или 3):";
+// Цикл для прохода по каждому вопросу викторины
+quiz.forEach((item) => {
+    // Формируем текст сообщения: вопрос + варианты ответов с новой строки
+    const message = item.question + "\n" + item.options.join("\n") + "\n\nВведите номер ответа (1, 2 или 3):";
     
-//     // Запрашиваем ответ у пользователя и преобразуем его в число
-//     const userAnswer = Number(prompt(message));
+    // Запрашиваем ответ у пользователя и преобразуем его в число
+    const userAnswer = Number(prompt(message));
     
-//     // Сравниваем ответ пользователя с правильным ответом
-//     if (userAnswer === item.correctAnswer) {
-//         correctCount++; // Увеличиваем счетчик, если ответ верный
-//     }
-// });
+    // Сравниваем ответ пользователя с правильным ответом
+    if (userAnswer === item.correctAnswer) {
+        correctCount++; // Увеличиваем счетчик, если ответ верный
+    }
+});
 
-// // Выводим финальный результат игры
-// alert(`Игра окончена!\nВы правильно ответили на ${correctCount} из ${quiz.length} вопросов.`);
-// }
+// Выводим финальный результат игры
+alert(`Игра окончена!\nВы правильно ответили на ${correctCount} из ${quiz.length} вопросов.`);
+}
 
 
 
@@ -682,23 +679,23 @@ console.log(circle2.getPerimeter());
 
 // реализация игры №4
 
-// function kniveScissorsPapper(){
-//   const Games5Massive = ["камень", "ножницы", "бумага"]
-//   let randomIndex = Math.floor(Math.random()*3) ;
-//   let compChoice =Games5Massive[randomIndex]
-//   let userChoice =  prompt('Камень, ножницы, бумага. Раз, два, три!').toLowerCase();
-// if (compChoice === userChoice){
-//   alert('Ничья!');}
-//   else if((userChoice === "камень" && compChoice === "ножницы") || (userChoice === "ножницы" && compChoice === "бумага") || (userChoice === "бумага" && compChoice === "камень")){
-//     alert('Победа!')
-//   } 
-//   else if((userChoice === "ножницы" && compChoice === "камень") || (userChoice === "бумага" && compChoice === "ножницы") || (userChoice === "камень" && compChoice === "бумага")){
-//     alert('Поражение!')
-//   }
-//   else{
-//     alert('Вы ввели что-то не то!')
-//   }
-// }
+function kniveScissorsPapper(){
+  const Games5Massive = ["камень", "ножницы", "бумага"]
+  let randomIndex = Math.floor(Math.random()*3) ;
+  let compChoice =Games5Massive[randomIndex]
+  let userChoice =  prompt('Камень, ножницы, бумага. Раз, два, три!').toLowerCase();
+if (compChoice === userChoice){
+  alert('Ничья!');}
+  else if((userChoice === "камень" && compChoice === "ножницы") || (userChoice === "ножницы" && compChoice === "бумага") || (userChoice === "бумага" && compChoice === "камень")){
+    alert('Победа!')
+  } 
+  else if((userChoice === "ножницы" && compChoice === "камень") || (userChoice === "бумага" && compChoice === "ножницы") || (userChoice === "камень" && compChoice === "бумага")){
+    alert('Поражение!')
+  }
+  else{
+    alert('Вы ввели что-то не то!')
+  }
+}
 
 // // #1
 // const people = [
@@ -773,24 +770,53 @@ console.log(circle2.getPerimeter());
 
 // Функция delayForSecond через 1 секунду пишет в консоль 
 // «Прошла одна секунда», а затем вызывает переданный колбэк
-function delayForSecond(cb) {
-    setTimeout(() => {
-        console.log('Прошла одна секунда');
-        if(cb) {  cb(); }
-    }, 1000)
-}
+// function delayForSecond(cb) {
+//     setTimeout(() => {
+//         console.log('Прошла одна секунда');
+//         if(cb) {  cb(); }
+//     }, 1000)
+// }
 
-// Функция sayHi выводит в консоль приветствие для указанного имени
-function sayHi (name) {
-    console.log(`Привет, ${name}!`);
-}
+// // Функция sayHi выводит в консоль приветствие для указанного имени
+// function sayHi (name) {
+//     console.log(`Привет, ${name}!`);
+// }
 
-// Код выше менять нельзя
+// // Код выше менять нельзя
 
-// Нужно изменить код ниже:
-delayForSecond(() => sayHi('Глеб'));
+// // Нужно изменить код ниже:
+// delayForSecond(() => {
+//    setTimeout(() => {
+//         sayHi('Глеб');
+//     }, 1000); 
+// });
 
 
 // HW#9 Основы работы DOM
 
+// // №1
+// const headingEl = document.querySelector('.main-h1');
+// const hideButtonEl = document.querySelector('.hideText');
 
+// hideButtonEl.addEventListener('click', function() {
+//     if (headingEl.style.display === 'none') {
+//         headingEl.style.display = 'block';     
+//         hideButtonEl.textContent = 'Скрыть текст'; 
+//     } else {
+        
+//         headingEl.style.display = 'none';
+//         hideButtonEl.textContent = 'Показать текст';
+//     }
+// });
+
+// реализация игры №6
+
+window.backgroundChange = function() {
+  
+  const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+  
+  const miniGamesSection = document.querySelector('.mini-games');
+  if (miniGamesSection) {
+    miniGamesSection.style.backgroundColor = randomColor;
+  }
+}
