@@ -6,12 +6,14 @@
 
 body {
   overflow-x: hidden;
+  position: relative;
 }
 
 .main-hero-page {
   background-color: rgb(225, 255, 143);
   height: 710px;
   position: relative;
+  max-width: 1200px;
 }
 
 .main-header {
@@ -79,9 +81,7 @@ body {
 }
 
 .main-animated {
-  height: 90px;
   background-color: rgb(188, 236, 48);
-  position: relative;
   /* Чтобы дочерний блок позиционировался относительно секции */
   overflow: hidden;
   /* Скрываем ту часть картинки, которая вылезает за экран */
@@ -118,12 +118,12 @@ body {
   vertical-align: middle;
   text-transform: uppercase;
   margin-top: 28px;
+  padding-bottom: 27px;
 }
 
 .about-games {
   height: 1440px;
   background-color: rgb(32, 32, 39);
-  padding-top: 94px;
 }
 
 .about-games-title-h2 {
@@ -138,6 +138,7 @@ body {
   vertical-align: middle;
   color: white;
   margin-bottom: 24px;
+  margin-top: 94px;
 }
 
 .about-games-title-h3 {
@@ -287,17 +288,15 @@ body {
 }
 
 .about-games {
-  position: relative;
-  /* Чтобы дочерний блок позиционировался относительно секции */
   overflow: hidden;
   /* Скрываем ту часть картинки, которая вылезает за экран */
 }
 
 .about-games-svg-Big {
   position: absolute;
-  top: 392px;
+  top: 1203px;
   /* Центрируем по вертикали */
-  right: -127px;
+  right: -194px;
   /* Сдвигаем вправо за край экрана (подберите нужное число) */
   transform: translateY(-50%);
   /* Точная центровка по вертикали */
@@ -845,6 +844,10 @@ body {
   .main-runtext-style {
     font-size: 16px;
     margin-top: 17px;
+  }
+  .main-title {
+    width: 343px;
+    height: 371px;
   }
   .main-angleUp {
     display: none;

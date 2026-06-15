@@ -4,12 +4,14 @@
 }
 body{
     overflow-x: hidden;
+    position: relative;
 }
 
 .main-hero-page {
     background-color: rgba(225, 255, 143, 1);
     height: 710px;
     position: relative;
+    max-width: 1200px;
 }
 
 .main-header {
@@ -77,9 +79,9 @@ body{
 }
 
 .main-animated {
-    height: 90px;
+    // height: 90px;
     background-color: rgba(188, 236, 48, 1);
-    position: relative;
+    // position: relative;
     /* Чтобы дочерний блок позиционировался относительно секции */
     overflow: hidden;
     /* Скрываем ту часть картинки, которая вылезает за экран */
@@ -119,12 +121,13 @@ body{
     vertical-align: middle;
     text-transform: uppercase;
     margin-top: 28px;
+    padding-bottom: 27px;
 }
 
 .about-games {
     height: 1440px;
     background-color: rgba(32, 32, 39, 1);
-    padding-top: 94px;
+    
 }
 
 
@@ -140,6 +143,7 @@ body{
     vertical-align: middle;
     color: white;
     margin-bottom: 24px;
+    margin-top: 94px;
 }
 
 .about-games-title-h3 {
@@ -289,17 +293,16 @@ body{
 }
 
 .about-games {
-    position: relative;
-    /* Чтобы дочерний блок позиционировался относительно секции */
+
     overflow: hidden;
     /* Скрываем ту часть картинки, которая вылезает за экран */
 }
 
 .about-games-svg-Big {
     position: absolute;
-    top: 392px;
+    top: 1203px;
     /* Центрируем по вертикали */
-    right: -127px;
+    right: -194px;
     /* Сдвигаем вправо за край экрана (подберите нужное число) */
     transform: translateY(-50%);
     /* Точная центровка по вертикали */
@@ -805,4 +808,5 @@ right: 150px;
 margin-top:3414px;
 }
 
-@import'mobile'
+@import'mobile';
+@import'tablet';
