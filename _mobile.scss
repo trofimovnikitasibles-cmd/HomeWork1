@@ -218,12 +218,12 @@ height: 529px;
     margin-bottom: 48px;
 }
 .mini-games{
-   height: max-content;
+//    height: max-content;
    padding-bottom: 10px;
 }
 .mini-games-play-1{
-    width: 343px;
-height: 528.6px;
+    max-width: 343px;
+// height: 528.6px;
 border-radius: 30px;
 background-color: rgba(255, 255, 255, 1);
 display: flex;
@@ -233,8 +233,8 @@ row-gap: 32px;
 }
 
 .mini-games-play-2{
-    width: 343px;
-height: 567.6px;
+    max-width: 343px;
+// height: 567.6px;
 border-radius: 30px;
 background-color: rgba(255, 255, 255, 1);
 display: flex;
@@ -243,8 +243,8 @@ justify-content: flex-start;
 row-gap: 32px;
 }
 .mini-games-play-3{
-    width: 343px;
-height: 567.6px;
+    max-width: 343px;
+// height: 567.6px;
 border-radius: 30px;
 background-color: rgba(255, 255, 255, 1);
 display: flex;
@@ -253,8 +253,8 @@ justify-content: flex-end;
 row-gap: 32px;
 }
 .mini-games-play-4{
-    width: 343px;
-height: 606.6px;
+    max-width: 343px;
+// height: 606.6px;
 border-radius: 30px;
 background-color: rgba(255, 255, 255, 1);
 display: flex;
@@ -263,8 +263,8 @@ justify-content: flex-start;
 row-gap: 32px;
 }
 .mini-games-play-5{
-    width: 343px;
-height: 567.63px;
+    max-width: 343px;
+// height: 567.63px;
 border-radius: 30px;
 background-color: rgba(255, 255, 255, 1);
 display: flex;
@@ -273,8 +273,8 @@ justify-content: flex-end;
 row-gap: 32px;
 }
 .mini-games-play-6{
-    width: 343px;
-height: 626.6px;
+    max-width: 343px;
+// height: 626.6px;
 border-radius: 30px;
 background-color: rgba(255, 255, 255, 1);
 display: flex;
@@ -288,18 +288,18 @@ row-gap: 32px;
     height: 285px;
 }
 .mini-games-name-left{
-     margin-top:0px;
-    margin-right: 29.04px;
-    margin-left: 29.04px;
-    width: 285px;
-height: 182px;
+//      margin-top:0px;
+//     margin-right: 29.04px;
+//     margin-left: 29.04px;
+//     width: 285px;
+// height: 182px;
 }
 .mini-games-name-right{
-     margin-top:0px;
-    margin-right: 29.04px;
-    margin-left: 29.04px;
-    width: 285px;
-height: 182px;
+//      margin-top:0px;
+//     margin-right: 29.04px;
+//     margin-left: 29.04px;
+//     width: 285px;
+// height: 182px;
 }
 .mini-games-name{
     font-family: "Montserrat";
@@ -328,7 +328,7 @@ width: 249px;
 }
 
 .mini-games-btn{
-width: 285px;
+// width: 285px;
 height: 55px;
 border-width: 1px;
 border-radius: 60px;

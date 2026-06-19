@@ -3,15 +3,16 @@
     margin: 0;
 }
 body{
-    overflow-x: hidden;
-    position: relative;
+    background-color: black;
+    // overflow-x: hidden;
+    // position: relative;
 }
 
 .main-hero-page {
     background-color: rgba(225, 255, 143, 1);
-    height: 710px;
+    // height: 710px;
     position: relative;
-    max-width: 1200px;
+    // max-width: 1200px;
 }
 
 .main-header {
@@ -23,17 +24,17 @@ body{
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
-    z-index: 1;
+    // z-index: 1;
 }
 
 .main-title {
     padding-top: 196px;
-    margin-bottom: 180px;
+    padding-bottom: 180px;
 }
 
 .main-h1 {
-    width: 769px;
-    height: 156px;
+    max-width: 769px;
+    // height: 156px;
     font-family: "Montserrat";
     font-weight: 700;
     font-style: Bold;
@@ -41,6 +42,8 @@ body{
     line-height: 100%;
     letter-spacing: 0px;
     vertical-align: middle;
+    position: relative;
+    z-index: 2;
 
 }
 
@@ -125,15 +128,15 @@ body{
 }
 
 .about-games {
-    height: 1440px;
+    // height: 1440px;
     background-color: rgba(32, 32, 39, 1);
     
 }
 
 
 .about-games-title-h2 {
-    width: 314px;
-    height: 78px;
+    // width: 314px;
+    // height: 78px;
     font-family: "Montserrat";
     font-weight: 700;
     font-style: Bold;
@@ -143,7 +146,7 @@ body{
     vertical-align: middle;
     color: white;
     margin-bottom: 24px;
-    margin-top: 94px;
+    padding-top: 94px;
 }
 
 .about-games-title-h3 {
@@ -160,34 +163,34 @@ body{
 }
 
 .about-games-box {
-    width: 1201px;
+    // width: 1201px;
 }
 
 .about-games-box-all {
     margin-top: 72px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
+    // grid-template-rows: repeat(4, auto);
     gap: 32px;
 }
 
 .about-games-box-1 {
     height: 473px;
-    width: 378px;
+    // width: 378px;
     background-color: white;
     border-radius: 30px;
 }
 
 .about-games-box-2 {
     height: 512px;
-    width: 378px;
+    // width: 378px;
     background-color: white;
     border-radius: 30px;
 }
 
 .about-games-box-3 {
     height: 473px;
-    width: 378px;
+    // width: 378px;
     background-color: white;
     border-radius: 30px;
     z-index: 1;
@@ -195,71 +198,75 @@ body{
 
 .about-games-box-4 {
     height: 551px;
-    width: 378px;
+    // width: 378px;
     background-color: white;
     border-radius: 30px;
 }
 
 .about-games-box-5 {
     height: 512px;
-    width: 378px;
+    // width: 378px;
     background-color: white;
     border-radius: 30px;
 }
 
 .about-games-box-6 {
     height: 551px;
-    width: 378px;
+    // width: 378px;
     background-color: white;
     border-radius: 30px;
 }
-
-.about-games-box-link-1 {
-    grid-column: 1;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.picGame{
+    width: 100%;
 }
 
-.about-games-box-link-2 {
-    grid-column: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
+// .about-games-box-link-1 {
+//     grid-column: 1;
+//     grid-row-start: 1;
+//     grid-row-end: 2;
+// }
 
-.about-games-box-link-3 {
-    grid-column: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
+// .about-games-box-link-2 {
+//     grid-column: 2;
+//     grid-row-start: 1;
+//     grid-row-end: 3;
+// }
 
-.about-games-box-link-4 {
-    grid-column: 1;
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
+// .about-games-box-link-3 {
+//     grid-column: 3;
+//     grid-row-start: 1;
+//     grid-row-end: 2;
+// }
 
-.about-games-box-link-5 {
-    grid-column: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
+// .about-games-box-link-4 {
+//     grid-column: 1;
+//     grid-row-start: 2;
+//     grid-row-end: 4;
+// }
 
-.about-games-box-link-6 {
-    grid-column: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
+// .about-games-box-link-5 {
+//     grid-column: 2;
+//     grid-row-start: 3;
+//     grid-row-end: 4;
+// }
+
+// .about-games-box-link-6 {
+//     grid-column: 3;
+//     grid-row-start: 2;
+//     grid-row-end: 4;
+// }
 
 .about-games-box__item {
-    width: 378px;
-    height: 314px;
+    // width: 378px;
+    // height: 314px;
 }
 
 .about-games-box-GameName {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-left: 32px;
+    padding: 10px;
+    padding-left: 20px;
 }
 
 .about-games-box-game {
@@ -293,22 +300,22 @@ body{
 }
 
 .about-games {
-
-    overflow: hidden;
+position: relative;
+    // overflow: hidden;
     /* Скрываем ту часть картинки, которая вылезает за экран */
 }
 
 .about-games-svg-Big {
     position: absolute;
-    top: 1203px;
+    top: 393px;
     /* Центрируем по вертикали */
-    right: -194px;
+    right: 0px;
     /* Сдвигаем вправо за край экрана (подберите нужное число) */
     transform: translateY(-50%);
     /* Точная центровка по вертикали */
-    width: 584.72px;
+    // width: 584.72px;
     /* Размер вашей SVG */
-    height: 584.72px;
+    // height: 584.72px;
     background-repeat: no-repeat;
     z-index: 0;
     /* Картинка будет под текстом, если у текста z-index выше */
@@ -318,15 +325,15 @@ body{
 
 .about-games-svg-Small-1 {
     position: absolute;
-    top: 834px;
+    top: 825px;
     /* Центрируем по вертикали */
     left: 25px;
     /* Сдвигаем вправо за край экрана (подберите нужное число) */
     transform: translateY(-50%);
     /* Точная центровка по вертикали */
-    width: 31.34px;
-    /* Размер вашей SVG */
-    height: 31.34px;
+    // width: 31.34px;
+    // /* Размер вашей SVG */
+    // height: 31.34px;
     background-repeat: no-repeat;
     z-index: 2;
     /* Картинка будет под текстом, если у текста z-index выше */
@@ -336,15 +343,15 @@ body{
 
 .about-games-svg-Small-2 {
     position: absolute;
-    top: 890px;
+    top: 900px;
     /* Центрируем по вертикали */
     left: 40px;
     /* Сдвигаем вправо за край экрана (подберите нужное число) */
     transform: translateY(-50%);
     /* Точная центровка по вертикали */
-    width: 54.6px;
-    /* Размер вашей SVG */
-    height: 54.6px;
+    // width: 54.6px;
+    // /* Размер вашей SVG */
+    // height: 54.6px;
     background-repeat: no-repeat;
     z-index: 0;
     /* Картинка будет под текстом, если у текста z-index выше */
@@ -536,11 +543,11 @@ body{
 .about-games-box-link-1 {
     text-decoration: none;
     color: inherit;
-    width: 378px;
-    height: 473px;
+    // width: 378px;
+    // height: 473px;
     border-radius: 30px;
     transition: transform 0.9s ease;
-    display: inline-block;
+    // display: inline-block;
 }
 .about-games-box-link-1:hover{
     transform: scale(1.1);
@@ -549,11 +556,11 @@ body{
 .about-games-box-link-2 {
     text-decoration: none;
     color: inherit;
-    width: 378px;
-    height: 512px;
+    // width: 378px;
+    // height: 512px;
     border-radius: 30px;
     transition: transform 0.9s ease;
-    display: inline-block;
+    // display: inline-block;
 }
 .about-games-box-link-2:hover{
     transform: scale(1.1);
@@ -563,11 +570,11 @@ body{
     text-decoration: none;
     color: inherit;
     z-index: 1;
-    width: 378px;
-    height: 473px;
+    // width: 378px;
+    // height: 473px;
     border-radius: 30px;
     transition: transform 0.9s ease;
-    display: inline-block;
+    // display: inline-block;
 }
 .about-games-box-link-3:hover{
     transform: scale(1.1);
@@ -576,11 +583,11 @@ body{
 .about-games-box-link-4 {
     text-decoration: none;
     color: inherit;
-    width: 378px;
-    height: 314px;
+    // width: 378px;
+    // height: 314px;
     border-radius: 30px;
     transition: transform 0.9s ease;
-    display: inline-block;
+    // display: inline-block;
 }
 .about-games-box-link-4:hover{
     transform: scale(1.1);
@@ -589,11 +596,11 @@ body{
 .about-games-box-link-5 {
     text-decoration: none;
     color: inherit;
-    width: 378px;
-    height: 473px;
+    // width: 378px;
+    // height: 473px;
     border-radius: 30px;
     transition: transform 0.9s ease;
-    display: inline-block;
+    // display: inline-block;
 }
 
 .about-games-box-link-5:hover{
@@ -603,11 +610,11 @@ body{
 .about-games-box-link-6 {
     text-decoration: none;
     color: inherit;
-    width: 378px;
-    height: 314px;
+    // width: 378px;
+    // height: 314px;
     border-radius: 30px;
     transition: transform 0.9s ease;
-    display: inline-block;
+    // display: inline-block;
 }
 .about-games-box-link-6:hover{
     transform: scale(1.1);
@@ -620,9 +627,9 @@ background-color: rgba(189, 237, 53, 1);
 
 .ftr-title{
     text-align: center;
-    padding-top: 61px;
-    width: 285px;
-height: 29px;
+    padding: 61px;
+//     width: 285px;
+// height: 29px;
 font-family: "Montserrat";
 font-weight: 600;
 font-style: "SemiBold";
@@ -630,7 +637,7 @@ font-size: 24px;
 line-height: 100%;
 letter-spacing: 0px;
 vertical-align: middle;
-margin-left:578px;
+// margin-left:578px;
 }
 .main-mobile-star-big{
     display: none;
@@ -648,9 +655,9 @@ margin-left:578px;
     display:none;   
 }
 .mini-games{
-    height: 3500px;
+    // height: 3500px;
     background-color: rgba(32, 32, 39, 1);
-    margin-top: -1px;
+    // margin-top: -1px;
 }
 .mini-games-title{
     font-family: "Montserrat";
@@ -661,77 +668,88 @@ line-height: 100%;
 letter-spacing: 0px;
 vertical-align: middle;
 color:rgba(255, 255, 255, 1);
-padding-top: 46px;
+padding-top: 96px;
 margin-bottom: 72px;
 }
 .mini-games-play-all{
     display: flex;
     flex-direction: column;
     gap:32px;
+    padding-bottom: 144px;
+    align-items: center;
 }
 .mini-games-play-1{
-    width: 1200px;
-height: 500px;
+//     width: 1200px;
+// height: 500px;
 border-radius: 47px;
 background-color: rgba(255, 255, 255, 1);
 display: flex;
 gap:48px;
 }
 .mini-games-play-2{
-    width: 1200px;
-height: 500px;
+//     width: 1200px;
+// height: 500px;
 border-radius: 47px;
 background-color: rgba(255, 255, 255, 1);
  display: flex;
  gap:48px;
 }
 .mini-games-play-3{
-    width: 1200px;
-height: 500px;
+//     width: 1200px;
+// height: 500px;
 border-radius: 47px;
 background-color: rgba(255, 255, 255, 1);
 display: flex;
 gap:48px;
 }
 .mini-games-play-4{
-    width: 1200px;
-height: 500px;
+//     width: 1200px;
+// height: 500px;
 border-radius: 47px;
 background-color: rgba(255, 255, 255, 1);
 display: flex;
 gap:48px;
 }
 .mini-games-play-5{
-    width: 1200px;
-height: 500px;
+//     width: 1200px;
+// height: 500px;
 border-radius: 47px;
 background-color: rgba(255, 255, 255, 1);
 display: flex;
 gap:48px;
 }
 .mini-games-play-6{
-    width: 1200px;
-height: 500px;
+    //     width: 1200px;
+    // height: 500px;
 border-radius: 47px;
 background-color: rgba(255, 255, 255, 1);
 display: flex;
 gap:48px;
 }
+
+.mini-games__item{
+    width: 50%;
+}
+
 .mini-games__item-pic{
-    width: 600px;
-    height: 500px;
+    // width: 600px;
+    // height: 500px;
+    // width: 100%;
+    width:100%;
 }
 .mini-games-name-left{
-    margin-top: 48px;
-    margin-left: 48px;
-    width: 504px;
-height: 147px;
+    // margin-top: 48px;
+    // margin-left: 48px;
+    width: 50%;
+    padding: 48px;
+// height: 147px;
 }
 .mini-games-name-right{
-     margin-top: 48px;
-    margin-right: 48px;
-    width: 504px;
-height: 147px;
+    //  margin-top: 48px;
+    // margin-right: 48px;
+    width: 50%;
+    padding: 48px;
+// height: 147px;
 }
 .mini-games-name{
     font-family: "Montserrat";
@@ -781,31 +799,35 @@ color: black;
 }
 .star-mini-1{
         position: absolute;
-    width: 35px;
-    height: 35px;
+    // width: 35px;
+    // height: 35px;
     right: 123.79px;
-    margin-top: 75px;
+    // margin-top: 75px;
+    top:2323px;
 }
 .star-mini-2{
     position: absolute;
-     width: 68.86px;
-    height: 68.86px;
+    //  width: 68.86px;
+    // height: 68.86px;
     right: 44.91px;
-    margin-top: 126px;
+    // margin-top: 126px;
+    top:2356px;
 }
 .star-mini-3{
     position: absolute;
-    width: 69px;
-height: 69px;
-margin-top: 3366px;
+//     width: 69px;
+// height: 69px;
+// margin-top: 3366px;
 right: 52px;
+top:5350px;
 }
 .star-mini-4{
     position: absolute;
-    width: 41px;
-height: 41px;
+//     width: 41px;
+// height: 41px;
 right: 150px;
-margin-top:3414px;
+// margin-top:3414px;
+top:5385px;
 }
 
 @import'mobile';
