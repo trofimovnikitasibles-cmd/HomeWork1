@@ -513,6 +513,8 @@ body {
   color: inherit;
   border-radius: 30px;
   transition: transform 0.9s ease;
+  display: flex;
+  align-items: flex-end;
 }
 
 .about-games-box-link-5:hover {
@@ -597,6 +599,7 @@ body {
   background-color: rgb(255, 255, 255);
   display: flex;
   gap: 48px;
+  width: 100%;
 }
 
 .mini-games-play-2 {
@@ -604,6 +607,7 @@ body {
   background-color: rgb(255, 255, 255);
   display: flex;
   gap: 48px;
+  width: 100%;
 }
 
 .mini-games-play-3 {
@@ -611,6 +615,7 @@ body {
   background-color: rgb(255, 255, 255);
   display: flex;
   gap: 48px;
+  width: 100%;
 }
 
 .mini-games-play-4 {
@@ -618,6 +623,7 @@ body {
   background-color: rgb(255, 255, 255);
   display: flex;
   gap: 48px;
+  width: 100%;
 }
 
 .mini-games-play-5 {
@@ -625,6 +631,7 @@ body {
   background-color: rgb(255, 255, 255);
   display: flex;
   gap: 48px;
+  width: 100%;
 }
 
 .mini-games-play-6 {
@@ -632,6 +639,7 @@ body {
   background-color: rgb(255, 255, 255);
   display: flex;
   gap: 48px;
+  width: 100%;
 }
 
 .mini-games__item {
@@ -639,6 +647,7 @@ body {
 }
 
 .mini-games__item-pic {
+  height: 100%;
   width: 100%;
 }
 
@@ -715,13 +724,13 @@ body {
 .star-mini-3 {
   position: absolute;
   right: 52px;
-  top: 5350px;
+  top: 0px;
 }
 
 .star-mini-4 {
   position: absolute;
   right: 150px;
-  top: 5385px;
+  top: 0px;
 }
 
 @media (max-width: 738px) {
@@ -1033,7 +1042,7 @@ body {
     font-size: 16px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 996px) {
   .about-games-box-all {
     margin-top: 72px;
     display: grid;
